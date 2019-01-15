@@ -1,0 +1,35 @@
+SQL> ;
+  1* select * from test
+SQL> CREATE TABLE Staff_2010 (
+  2  	Last VARCHAR(20,
+  3  
+SQL> ;
+  1  CREATE TABLE Staff_2010 (
+  2* 	Last VARCHAR(20,
+SQL> CREATE TABLE Staff_2010 (
+  2  	Last VARCHAR(20),
+  3  	First VARCHAR(20),
+  4  	status VARCHAR(20),
+  5  	salary NUMBER(10, 2),
+  6  	salary_type VARCHAR(40),
+  7  	title VARCHAR(200)
+  8  );
+
+Table created.
+
+SQL> define _EDITOR=vi
+SQL> define _EDITOR=vim
+SQL> edit
+Wrote file afiedt.buf
+
+  1  CREATE TABLE Staff_2010 (
+  2  	Last VARCHAR(20),
+  3  	First VARCHAR(20),
+  4  	status VARCHAR(20),
+  5  	salary NUMBER(10, 2),
+  6  	salary_type VARCHAR(40),
+  7  	title VARCHAR(200)
+  8* )
+SQL> load_data.php
+SP2-0734: unknown command beginning "load_data...." - rest of line ignored.
+SQL> spool off;
