@@ -1,5 +1,5 @@
 <?php
-$conn=oci_connect('<USERNAME>', '<PASSWORD>', '//dbserver.engr.scu.edu/db11g');
+$conn=oci_connect('dlee', 'helloworld', '//dbserver.engr.scu.edu/db11g');
 if($conn) {
         print "<br> Connection to the database successful";
 } else {
