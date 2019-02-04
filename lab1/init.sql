@@ -6,3 +6,4 @@ CREATE table Staff_2010 (
   salary_type VARCHAR(40),
   title VARCHAR(200)
 );
+
