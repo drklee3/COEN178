@@ -247,4 +247,49 @@ d2    Devt                1
   SELECT deptid
          *
 ERROR at line 1:
-ORA-00937: not a single-group gro
+ORA-00937: not a single-group group function 
+
+
+        SELECT COUNT(*)
+        *
+ERROR at line 5:
+ORA-01427: single-row subquery returns more than one row 
+
+
+
+DEPT_                                                                           
+-----                                                                           
+d1                                                                              
+
+
+DEPTI DEPTNAME                                                                  
+----- ----------                                                                
+d1    Research                                                                  
+
+
+DEPTI      EMPNO EMPNAME    DEPTNAME                                            
+----- ---------- ---------- ----------                                          
+d1             6 chen       Research                                            
+d1             3 wayne      Research                                            
+d1             1 smith      Research                                            
+d1             5 king       Research                                            
+d2             2 jones      Devt                                                
+d3             7 winger     Testing                                             
+d3             4 moor       Testing                                             
+
+7 rows selected.
+
+
+     EMPNO EMPNAME    DEPTI DEPTNAME                                            
+---------- ---------- ----- ----------                                          
+         6 chen       d1    Research                                            
+         3 wayne      d1    Research                                            
+         1 smith      d1    Research                                            
+         5 king       d1    Research                                            
+         2 jones      d2    Devt                                                
+         7 winger     d3    Testing                                             
+         4 moor       d3    Testing                                             
+
+7 rows selected.
+
+SQL> spool off;
