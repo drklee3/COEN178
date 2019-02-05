@@ -1,34 +1,34 @@
 --exercise 7
   SELECT deptid
-         , count(*) AS empcount
+         , COUNT(*) AS empcount
     FROM L_EMP
 GROUP BY deptid;
 
 -- exercise 8
 -- a
-  SELECT deptno
-         , deptname
-         , empcount
+  SELECT EMP.deptid
+         , L_DEPT.deptname
+         , EMP.empcount
     FROM (
         SELECT deptid
-               , count(*) AS empcount
+               , COUNT(*) AS empcount
           FROM L_EMP
-      GROUP BY deptid;
-    ), L_DEPT
-   WHERE deptno = L_DEPT.deptid;
+      GROUP BY deptid
+    ) EMP, L_DEPT
+   WHERE EMP.deptid = L_DEPT.deptid;
 
 -- b
-  SELECT deptno
-         , deptname
-         , empcount
+  SELECT EMP.deptid
+         , L_DEPT.deptname
+         , EMP.empcount
     FROM (
         SELECT deptid
-               , count(*) AS empcount
+               , COUNT(*) AS empcount
           FROM L_EMP
-      GROUP BY deptid;
-    ), L_DEPT
-   WHERE deptno = L_DEPT.deptid;
-ORDER BY empcount;
+      GROUP BY deptid
+    ) EMP, L_DEPT
+   WHERE EMP.deptid = L_DEPT.deptid
+ORDER BY EMP.empcount DESC;
 
 -- exercise 9
 -- attempt 1
@@ -36,6 +36,11 @@ ORDER BY empcount;
          , MAX(COUNT(*))
     FROM L_EMP
 GROUP BY deptid;
+
+/*
+no, the query does no work as max returns a single value
+while selecting deptid returns multiple rows
+*/
 
 -- attempt 2
   SELECT deptid
@@ -47,14 +52,32 @@ GROUP BY deptid
       GROUP BY deptid
   );
 
--- a
--- problem with query is ??
+/*
+a) the subquery returns more than a single row due to the
+   group by clause
+*/
 
--- fixed approach 2
-
+-- attempt 2 fixed
+  SELECT deptid AS DEPT_WITH_MAX_EMP
+    FROM L_EMP
+GROUP BY deptid
+  HAVING COUNT(*) >= ALL (
+        SELECT COUNT(*)
+          FROM L_EMP
+      GROUP BY deptid
+  );
 
 -- b
-
+      SELECT deptid
+             , deptname
+        FROM L_EMP
+NATURAL JOIN L_DEPT
+    GROUP BY deptid, deptname
+      HAVING COUNT(*) >= ALL (
+          SELECT COUNT(*)
+            FROM L_EMP
+        GROUP BY deptid
+  );
 
 -- exercise 10
 -- a
@@ -63,7 +86,10 @@ GROUP BY deptid
 NATURAL JOIN L_DEPT;
 
 -- b
-SELECT *
+SELECT L_EMP.empNo
+       , L_EMP.empname
+       , L_EMP.deptId
+       , L_DEPT.deptname
   FROM L_EMP
        , L_DEPT
  WHERE L_EMP.deptid = L_DEPT.deptid;
