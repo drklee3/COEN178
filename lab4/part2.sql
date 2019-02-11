@@ -77,3 +77,22 @@ BEGIN
 END;
 /
 show errors;
+
+-- QUESTION #8
+CREATE OR REPLACE
+FUNCTION getEmpSalary(p_name in VARCHAR)
+RETURN NUMBER IS
+    -- local variables
+    l_salary AlphaCoEmp.salary % type;
+BEGIN
+    SELECT salary
+      FROM AlphaCoEmp;
+    
+    RETURN l_salary;
+END;
+/
+show errors;
+
+
+SELECT getEmpSalary('...')
+  FROM DUAL;
