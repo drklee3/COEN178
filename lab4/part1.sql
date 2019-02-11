@@ -1,3 +1,4 @@
+-- QUESTION #1
 CREATE TABLE AlphaCoEmp (
     name   VARCHAR(25)   PRIMARY KEY,
     title  VARCHAR(20)   DEFAULT NULL,
