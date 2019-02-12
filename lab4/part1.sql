@@ -18,11 +18,10 @@ SELECT * FROM AlphaCoEmp;
 
 -- QUESTION #2
 
-CREATE TABLE Emp_Work(
+CREATE TABLE Emp_Work (
     name    VARCHAR(25) PRIMARY KEY,
     project VARCHAR(20) DEFAULT NULL,
-
-    CONSTRAINT FK_AlphaCo
+     CONSTRAINT FK_AlphaCo
     FOREIGN KEY (name)
      REFERENCES AlphaCoEmp(name)
 );
@@ -37,7 +36,7 @@ a) The 'i' is for case insensitive matching.
    This allows for any names starting with a, g, s
    both in lower case or upper case to be
    matched.
-b) __ rows were inserted into Emp_Work
+b) 82 rows were inserted into Emp_Work
 */
 
 SELECT name
@@ -46,11 +45,13 @@ SELECT name
 
 DELETE 
   FROM AlphaCoEmp
- WHERE name = 'smith';
+ WHERE name = 'Stoev';
 
 /*
-c) My deletion ___ work.  It didn't work
-   because
+c) My deletion didn't work as it violated the foreign
+   key constraint.  The name attribute in Emp_Work
+   references the name attribute in AlphaCoEmp in which
+   you cannot delete a child record before deleting the parent.
 */
 
 -- QUESTION #3
@@ -65,23 +66,24 @@ ADD CONSTRAINT FK_AlphaCo
      ON DELETE CASCADE;
 
 /*
-a) The table is altered?
+a) The table has been altered to delete child records
+   when a parent has been deleted.
 */
 
 DELETE
   FROM AlphaCoEmp
- WHERE name = 'Smith';
+ WHERE name = 'Stone';
 
 
 /*
-b) This time it ____ succeeded
+b) This time it succeeded.
 */
 
 SELECT *
   FROM Emp_Work
- WHERE name = 'Smith';
+ WHERE name = 'Stone';
 
  /*
- c) 
-
+ c) The record has been deleted.
  */
+ 
