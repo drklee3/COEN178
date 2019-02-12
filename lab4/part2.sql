@@ -112,3 +112,8 @@ show errors;
 SELECT getEmpSalary('Smith')
   FROM DUAL;
 
+/*
+Yes, the function worked correctly which
+returned the salary of Smith.
+*/
+
