@@ -1,0 +1,57 @@
+SQL> start a2_queries_dlee
+
+NAME                      PRICE                                                 
+-------------------- ----------                                                 
+oatmeal                       3                                                 
+fruit_plate                   8                                                 
+broccoli pie                  9                                                 
+chicken pie                  13                                                 
+ramen                        14                                                 
+steak                        21                                                 
+
+6 rows selected.
+
+
+NAME                      PRICE   CALORIES                                      
+-------------------- ---------- ----------                                      
+oatmeal                       3        120                                      
+fruit_plate                   8        220                                      
+broccoli pie                  9        200                                      
+chicken pie                  13        350                                      
+ramen                        14        500                                      
+steak                        21        420                                      
+
+6 rows selected.
+
+
+NAME                                                                            
+--------------------                                                            
+ramen                                                                           
+
+
+NAME                                                                            
+--------------------                                                            
+oatmeal                                                                         
+
+
+NAME                      PRICE                                                 
+-------------------- ----------                                                 
+broccoli pie                  9                                                 
+
+
+PHONE        COUNT(*)                                                           
+---------- ----------                                                           
+4085551212          2                                                           
+
+
+ORDERID              SUM(CALORIES)                                              
+-------------------- -------------                                              
+09                             500                                              
+O1                             760                                              
+O2                             350                                              
+O8                             120                                              
+
+
+1 row updated.
+
+SQL> spool off
