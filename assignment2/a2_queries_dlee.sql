@@ -1,31 +1,31 @@
 -- 1
   SELECT name
          , price
-    FROM MealItem2
+    FROM MealItem
 ORDER BY price;
 
 -- 2
   SELECT name
          , price
          , calories
-    FROM MealItem2
+    FROM MealItem
 ORDER BY price, calories;
 
 -- 3
 SELECT name
-  FROM MealItem2
+  FROM MealItem
  WHERE calories = 
        (SELECT MAX(calories)
-          FROM MealItem2);
+          FROM MealItem);
 
 -- 4
   SELECT name
-    FROM MealItem2
+    FROM MealItem
    WHERE name = (SELECT name
                    FROM (SELECT name
-                                , COUNT(*) AS order_count2
-                           FROM MealItem2
-                                NATURAL JOIN OrderItem
+                                , COUNT(*) AS order_count
+                           FROM MealItem
+                                NATURAL JOIN Order_Item
                        GROUP BY name
                        ORDER BY COUNT(*) DESC)
                    WHERE ROWNUM = 1);
@@ -35,29 +35,29 @@ SELECT name
 -- 5
 SELECT name
        , price
-  FROM MealItem2
+  FROM MealItem
  WHERE itemId NOT IN
        (SELECT itemId
-          FROM OrderItem);
+          FROM Order_Item);
 
 -- 6
 SELECT phone, COUNT(*)
-  FROM MealOrder2
+  FROM MealOrder
 GROUP BY phone
 HAVING COUNT(*) = (SELECT MAX(COUNT(*))
-                     FROM MealOrder2
+                     FROM MealOrder
                  GROUP BY phone);
 
 -- 7
   SELECT orderId
          , SUM(calories)
-    FROM OrderItem
-         NATURAL JOIN MealItem2
+    FROM Order_Item
+         NATURAL JOIN MealItem
 GROUP BY orderId;
 
 -- 8
-UPDATE MealItem2
+UPDATE MealItem
    SET price = 0.9 * price
  WHERE itemId NOT IN 
        (SELECT itemId
-          FROM OrderItem);
+          FROM Order_Item);
