@@ -1,23 +1,23 @@
-CREATE TABLE MealItem2 (
+CREATE TABLE MealItem (
     itemId   VARCHAR(20) PRIMARY KEY,
     name     VARCHAR(20),
     price    NUMBER(2),
     calories INTEGER
 );
 
-CREATE TABLE MealOrder2 (
+CREATE TABLE MealOrder (
     orderId VARCHAR(20) PRIMARY KEY,
     name    VARCHAR(20),
     phone   VARCHAR(10)
 );
 
-CREATE TABLE OrderItem (
+CREATE TABLE Order_Item (
     orderId VARCHAR(20),
     itemId  VARCHAR(20),
-    CONSTRAINT PK2        PRIMARY KEY (orderId, itemId),
-    CONSTRAINT FK_orderId2 FOREIGN KEY (orderId)
-                          REFERENCES MealOrder2(orderId),
-    CONSTRAINT FK_itemId2  FOREIGN KEY (itemId)
-                          REFERENCES MealItem2(itemId)
+    CONSTRAINT PK         PRIMARY KEY (orderId, itemId),
+    CONSTRAINT FK_orderId FOREIGN KEY (orderId)
+                          REFERENCES MealOrder(orderId),
+    CONSTRAINT FK_itemId  FOREIGN KEY (itemId)
+                          REFERENCES MealItem(itemId)
 );
 
