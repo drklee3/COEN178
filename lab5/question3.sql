@@ -9,14 +9,11 @@ BEGIN
         INTO l_cnt
         FROM AlphaCoEmp 
     GROUP BY title
-      HAVING title = p_title
+      HAVING title = p_title;
  
     RETURN l_cnt;
 END; 
 /
+show errors;
 
-SELECT countByTitle('director')
-  FROM Dual;
 
-SELECT countByTitle('advisor')
-  FROM Dual

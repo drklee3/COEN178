@@ -1,0 +1,2066 @@
+SQL> start question1;
+
+Procedure created.
+
+No errors.
+SQL> exec assignJobTitlesAndSalaries
+BEGIN assignJobTitlesAndSalaries; END;
+
+*
+ERROR at line 1:
+ORA-01013: user requested cancel of current operation 
+
+
+
+SQL> select AlphaCoEmp;
+select AlphaCoEmp
+                *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> select * from AlphaCoEmp;
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Loeb                                                66117                       
+London                                              20553                       
+Maher                                               68322                       
+Messina                                             50165                       
+Monje Jr.                                           52087                       
+Newell                                              45057                       
+Noel                                                97417                       
+Oleske                                              35182                       
+Page                                                14737                       
+Psaki                                               81593                       
+Reinstein                                           46210                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Roche                                               10718                       
+Rouse                                               38157                       
+Sathe                                               48083                       
+Schulman                                            62619                       
+Seymour                                             23553                       
+Shapiro                                             91686                       
+Shaw                                                22271                       
+Sher                                                97262                       
+Showers                                             24446                       
+Siegel                                              77240                       
+Sirbu                                               32423                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Stephens                                            15994                       
+Sutton                                              39033                       
+Taggart Jr.                                         37003                       
+Terry                                               16244                       
+Adams                                               24685                       
+Aldy Jr.                                            33398                       
+Alley                                               89567                       
+Anello                                              41301                       
+Barnes                                              24366                       
+Bates                                               46018                       
+Bedingfield                                         54613                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Chaifetz                                            93988                       
+Clarke                                              48685                       
+Cobbina                                             54091                       
+Crutchfield                                          6292                       
+Dalheim                                             28161                       
+Ealons                                              75668                       
+Escobar                                             64878                       
+Farrell                                             16225                       
+Gaspard                                             48771                       
+Groth                                               43553                       
+Heimbach                                            12344                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Jawando                                             84962                       
+Kennedy                                             77704                       
+Konwinski                                           89130                       
+Lewis                                               76133                       
+Liddell-Westefeld                                   13979                       
+Limon                                               95302                       
+Vanderslice                                         27516                       
+Wear                                                75840                       
+White                                               55219                       
+Yeager Kaplan                                       33768                       
+Lynn                                                26771                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Mackey                                              98120                       
+McCarthy                                            31798                       
+McGinnis                                            88007                       
+McGuire                                             78563                       
+Mosteller                                           41654                       
+Mueller                                             81358                       
+Murtha                                              21783                       
+Onek                                                76200                       
+Papas                                               64350                       
+Parker                                              75580                       
+Paulsen                                             89896                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Quinn                                               59809                       
+Raizk                                               39449                       
+Reed                                                71243                       
+Ryan                                                38287                       
+Sahgal                                              83431                       
+Sass                                                 7910                       
+Schafer                                             66041                       
+Schwartz                                            40815                       
+Sibley                                              31791                       
+Singiser                                            62201                       
+Starkey                                             10127                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Swanson                                              5124                       
+Tamarin                                             15167                       
+Tchen                                               45981                       
+Agnew                                               11546                       
+Bauer                                               47201                       
+Beliveau                                             9237                       
+Bhowmik                                             44786                       
+Brennan                                             70069                       
+Buffett                                             46138                       
+Carrier                                             44138                       
+Cherlin                                             81411                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Cizner                                              81995                       
+Cokley                                              27248                       
+Colvin                                              90745                       
+Cuellar                                             82650                       
+Cutter                                              44944                       
+Deese                                               51868                       
+Dillon                                              29228                       
+Donilon                                             86805                       
+Dorsett                                             38666                       
+Fernandez                                           98362                       
+Frank                                               46793                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Frankel                                             56205                       
+Frye                                                15992                       
+Gonzalez                                            72561                       
+Graham                                              79044                       
+Hoang                                               75020                       
+Hopkins                                             36117                       
+Inouye                                              54307                       
+Johnson                                             38041                       
+Larus                                               60346                       
+Turton                                              33891                       
+Voorman                                             36938                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Watson                                              44101                       
+Wright                                              38344                       
+Lippert                                             35209                       
+Lovett                                              82800                       
+Martin                                              81440                       
+Massey                                              51427                       
+Mattson                                             62920                       
+McDonough                                           20338                       
+Milakofsky                                          45761                       
+Miranda                                             57575                       
+Mu??oz                                              17144                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Muntz                                               50555                       
+Odio                                                22098                       
+Pojman                                              16187                       
+Pope                                                85155                       
+Rodriguez                                           12659                       
+Sutphen                                             89716                       
+Thomas                                              99708                       
+Asen                                                39177                       
+Belive                                              73584                       
+Browner                                             18406                       
+Brundage                                            21119                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Brush                                               72685                       
+Cardwell                                            89211                       
+Chen                                                21002                       
+Chiodo                                              42663                       
+Corrigan                                            96508                       
+Crowley                                             42278                       
+Davies                                               5132                       
+DeGuzman Jr.                                        98960                       
+Devine                                              78076                       
+Edgerton                                            83239                       
+Edmonds                                             19755                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Eisen                                               17204                       
+Espinel                                             10048                       
+Favreau                                             72186                       
+Gardaphe                                            34076                       
+Gillette                                             7864                       
+Gomez                                               67206                       
+Gottry                                              69990                       
+Grant                                               44381                       
+Green                                               50810                       
+Harper                                              48917                       
+Hughes                                              63891                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Hurwitz                                             67392                       
+Juska                                               96147                       
+Kammerer                                            80220                       
+Kimball                                             68760                       
+Kommareddi                                          74728                       
+Kravis                                              70294                       
+LaBolt                                              27891                       
+Lerner                                              51447                       
+Lewin                                               76464                       
+Whichard                                             6576                       
+Zichal                                              26149                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Lu                                                  60103                       
+Naidoff                                             76007                       
+Narechania                                          31717                       
+Nicholson Jr.                                       25079                       
+Oxtoby                                              81572                       
+Pipkins                                             50386                       
+Portilla                                            40996                       
+Posey                                               98578                       
+Richardson                                          60516                       
+Rittner                                             69779                       
+Roach                                               22192                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Ruemmler                                            22740                       
+Samuels                                             51175                       
+Schmuck                                             19051                       
+Simas                                               52361                       
+Skoczek                                             77649                       
+Spencer                                             34096                       
+Ayling                                              50518                       
+Becnel                                              83094                       
+Binns                                               37475                       
+Birdsall                                            80798                       
+Bond                                                17265                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Branch                                              52905                       
+Brewer                                              57970                       
+Brown                                               90730                       
+Campos                                              12957                       
+Carter                                              24399                       
+Claude                                              88726                       
+Cohen                                               76597                       
+Davis                                                5536                       
+Dunn                                                99224                       
+Edwards                                             43342                       
+Emanuel                                             90762                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Faulman                                             43920                       
+Gavin Jr.                                           30127                       
+Greene                                              53758                       
+Hegde                                               79463                       
+Hernandez                                           43860                       
+Hiatt                                               65784                       
+Hogan                                               30506                       
+Kochman                                             14160                       
+Koo                                                 68002                       
+Krass                                               66657                       
+Lartey                                              15066                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Leitner-Laserna                                     81443                       
+Lelyveld                                            48508                       
+Lezotte                                             57869                       
+Liegel                                              97856                       
+Lillie                                              25246                       
+Trainor                                             53388                       
+Tranchin                                            60365                       
+Turk                                                32246                       
+Valencia                                            88730                       
+Vogel                                               54481                       
+Wade                                                79119                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Love                                                50833                       
+Maska                                               83964                       
+McGrath                                             51115                       
+Metcalf                                             13804                       
+Mrazek                                              58169                       
+Neralla                                             50922                       
+Paige                                               40220                       
+Papa                                                41920                       
+Pfeiffer                                            51278                       
+Phadke                                              13699                       
+Pulliam                                             47319                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Schuker                                             71498                       
+Smoot                                               30637                       
+Stickel                                             57911                       
+Stoev                                               18145                       
+Summers                                              8155                       
+Sweeney                                             43256                       
+Teehee                                              18520                       
+Tennison                                            49751                       
+Terrell                                             47541                       
+Albino                                              62241                       
+Anderson                                            60773                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Baldassaro                                          10774                       
+Beinart                                             55826                       
+Blake                                               15975                       
+Chambers                                            61345                       
+Coven                                               79764                       
+Cuba                                                20971                       
+Cunningham                                          65326                       
+DeGuzman                                            55017                       
+DeRosa                                              78343                       
+Fenn                                                89175                       
+Finlen                                              74725                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Fiscus                                              90035                       
+Fitts                                               38931                       
+Ford                                                11927                       
+Gage                                                30385                       
+Gray                                                79080                       
+Hanson                                               7703                       
+Harris                                              76783                       
+Hash                                                22859                       
+Jabbour                                             15321                       
+Jackson                                             38155                       
+Jarrett                                             40703                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Jarvis-Shean                                        39354                       
+Jean-Pierre                                         61652                       
+Kalbaugh                                            61024                       
+Kale                                                41112                       
+Kelly                                               38765                       
+Levine                                              98139                       
+Tucker                                               7906                       
+Watkins                                             89487                       
+Webster                                             49502                       
+Young Jr.                                           60255                       
+Young                                               34945                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Zelman                                              61808                       
+Lorjuste                                            45309                       
+Markovitz                                           30879                       
+McBride                                             29775                       
+McNeal                                              23495                       
+Monteiro                                             5939                       
+Nathan                                              18563                       
+Neiman                                              31095                       
+Ocampo                                              26003                       
+Offerman                                            98735                       
+Olmos                                               81250                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Olson                                               78425                       
+Ortiz                                               56022                       
+Pate                                                36991                       
+Pourmorad                                           20848                       
+Rivadeneira                                         79938                       
+Robertson                                           61115                       
+Rosalsky                                            28840                       
+Sabochik                                            82906                       
+Samuels Jr.                                         83244                       
+Sanders                                             96595                       
+Schiliro                                            22425                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Shah                                                66798                       
+Sheehy                                              91939                       
+Strautmanis                                         49740                       
+Swire                                               59483                       
+Bassin                                              82670                       
+Bressler                                            10458                       
+Burman                                              14829                       
+Carden                                              15272                       
+Douglas                                             13288                       
+DuBois                                              50983                       
+Dyer                                                20034                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Earnest                                             20915                       
+Firestone                                           63706                       
+Garcia                                              30422                       
+Hennigan                                            31324                       
+Hornsby                                             92643                       
+Hurley                                              33798                       
+Jamison                                             97787                       
+Kim                                                 21594                       
+King                                                91571                       
+Kramer                                              16581                       
+Lee                                                 91726                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Leger                                               71345                       
+Lepow                                               77500                       
+Thorbjornsen                                        40962                       
+Tubman                                              97228                       
+Tucci                                               62605                       
+Vietor                                              81045                       
+Wang-Levine                                         86150                       
+Witt                                                86082                       
+Lipton                                              66927                       
+McCathran                                           27053                       
+Mehrbani                                            26884                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Millison                                            11548                       
+Moilanen                                            99792                       
+Nabors                                              13549                       
+Nelson                                              35233                       
+Northern                                            33324                       
+Rathod                                              16211                       
+Reeves                                              26851                       
+Santucci                                            77077                       
+Saunders                                            41037                       
+Schaub                                              19649                       
+Sinha                                               44956                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Tate-Gilmore                                         8847                       
+Abrams                                              82347                       
+Attili                                              29634                       
+Axelrod                                             49646                       
+Bernard                                             77725                       
+Beverly                                             77709                       
+Burton                                              20411                       
+Campoverdi                                          94487                       
+Camu??ez                                            74970                       
+Castillo                                            67940                       
+Chhabra                                             94925                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Conrad                                               7760                       
+Cusack                                              89166                       
+De Sio Jr.                                          12346                       
+DeParle                                             40528                       
+Donovan                                             68820                       
+Droege                                              91540                       
+Fernkas                                             76756                       
+Flatgard                                            37325                       
+Freeman                                             35172                       
+Godfrey                                             57531                       
+Goodman                                             19826                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Greenawalt                                          29464                       
+Jarvis                                              93939                       
+Jones                                               58746                       
+Jung                                                42535                       
+Kocher                                              19494                       
+Kumar                                               10875                       
+Lechtenberg                                         38824                       
+Ledbetter                                           36243                       
+Lesser                                              36527                       
+Verrilli                                            20428                       
+Walsh                                               74072                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Winter                                              95980                       
+Lipsky                                              27146                       
+Luck                                                18687                       
+Mack                                                74937                       
+Mastromonaco                                        78016                       
+Mayekar                                             75532                       
+McLaughlin                                          61120                       
+Millett                                             54022                       
+Nguyen                                              61853                       
+Odintz                                              29813                       
+Perez                                               16050                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Phillips                                            18894                       
+Roberts                                             40320                       
+Roddick                                             77369                       
+Rundlet                                             26772                       
+Setser                                              10080                       
+Smith                                                4154                       
+Sobel                                               57023                       
+Stoneman                                            34608                       
+Stracko                                             55863                       
+Amorsingh                                           44113                       
+Andrias                                             38895                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Baggetto                                            62593                       
+Baskerville Jr.                                     24882                       
+Bisi                                                44129                       
+Block                                               55521                       
+Blount                                              16549                       
+Bookey-Baker                                        13952                       
+Brooke                                              51938                       
+Burnough                                            14915                       
+Campbell                                            49042                       
+Canery                                              63920                       
+Cushman                                             22072                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Dale                                                21447                       
+Fergenson                                           64103                       
+Finkenbinder                                        85362                       
+Furman                                              16060                       
+Gibbs                                               29940                       
+Gottlieb                                            45562                       
+Hable                                               38609                       
+Higginbottom                                        62138                       
+Hitchcock                                           46222                       
+Johnston                                            71424                       
+Kang                                                55146                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Keenan                                               6833                       
+Kelleher Jr.                                        20711                       
+Kiley                                               63825                       
+Kohnke                                              86072                       
+Lehrich                                             71518                       
+Tseggai                                             40483                       
+Utech                                               89687                       
+Vale                                                75356                       
+Vega                                                70422                       
+Weiser                                              78021                       
+Whitty                                              93954                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Williams                                            40108                       
+Wilson                                              77667                       
+Wong                                                30236                       
+
+432 rows selected.
+
+SQL> describe AlphaCoEmp;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ NAME                                      NOT NULL VARCHAR2(25)
+ TITLE                                              VARCHAR2(20)
+ SALARY                                             NUMBER(10,2)
+
+SQL> insert into AlphaCoEmp VALUES ('bobbylol', '', 1234);
+
+1 row created.
+
+SQL> update AlphaCoEmp set title = 'hello' where name = 'bobbylol';
+
+1 row updated.
+
+SQL> delete from alphacoemp where name = 'bobbylol';
+
+1 row deleted.
+
+SQL> exec assignJobTitlesAndSalaries()
+BEGIN assignJobTitlesAndSalaries(); END;
+
+*
+ERROR at line 1:
+ORA-01013: user requested cancel of current operation 
+
+
+
+SQL> select * from alphacoemp where name = 'Wong';
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Wong                                                30236                       
+
+SQL> update alphacoemp set title = 'testing' where name = 'Wong';
+
+1 row updated.
+
+SQL> select * from alphacoemp where name = 'Wong';
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Wong                      testing                   30236                       
+
+SQL> start question1.sql;
+
+Procedure created.
+
+No errors.
+SQL> exec assignJobTitlesAndSalaries
+BEGIN assignJobTitlesAndSalaries; END;
+
+*
+ERROR at line 1:
+ORA-01013: user requested cancel of current operation 
+
+
+
+SQL> start part2;
+SP2-0310: unable to open file "part2.sql"
+SQL> start question2;
+
+Function created.
+
+No errors.
+SQL> SELECT calcSalaryRaise('Stone', 2) FROM DUAL;
+
+CALCSALARYRAISE('STONE',2)                                                      
+--------------------------                                                      
+                                                                                
+
+SQL> select * from AlphaCoEmp;
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Loeb                                                66117                       
+London                                              20553                       
+Maher                                               68322                       
+Messina                                             50165                       
+Monje Jr.                                           52087                       
+Newell                                              45057                       
+Noel                                                97417                       
+Oleske                                              35182                       
+Page                                                14737                       
+Psaki                                               81593                       
+Reinstein                                           46210                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Roche                                               10718                       
+Rouse                                               38157                       
+Sathe                                               48083                       
+Schulman                                            62619                       
+Seymour                                             23553                       
+Shapiro                                             91686                       
+Shaw                                                22271                       
+Sher                                                97262                       
+Showers                                             24446                       
+Siegel                                              77240                       
+Sirbu                                               32423                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Stephens                                            15994                       
+Sutton                                              39033                       
+Taggart Jr.                                         37003                       
+Terry                                               16244                       
+Adams                                               24685                       
+Aldy Jr.                                            33398                       
+Alley                                               89567                       
+Anello                                              41301                       
+Barnes                                              24366                       
+Bates                                               46018                       
+Bedingfield                                         54613                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Chaifetz                                            93988                       
+Clarke                                              48685                       
+Cobbina                                             54091                       
+Crutchfield                                          6292                       
+Dalheim                                             28161                       
+Ealons                                              75668                       
+Escobar                                             64878                       
+Farrell                                             16225                       
+Gaspard                                             48771                       
+Groth                                               43553                       
+Heimbach                                            12344                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Jawando                                             84962                       
+Kennedy                                             77704                       
+Konwinski                                           89130                       
+Lewis                                               76133                       
+Liddell-Westefeld                                   13979                       
+Limon                                               95302                       
+Vanderslice                                         27516                       
+Wear                                                75840                       
+White                                               55219                       
+Yeager Kaplan                                       33768                       
+Lynn                                                26771                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Mackey                                              98120                       
+McCarthy                                            31798                       
+McGinnis                                            88007                       
+McGuire                                             78563                       
+Mosteller                                           41654                       
+Mueller                                             81358                       
+Murtha                                              21783                       
+Onek                                                76200                       
+Papas                                               64350                       
+Parker                                              75580                       
+Paulsen                                             89896                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Quinn                                               59809                       
+Raizk                                               39449                       
+Reed                                                71243                       
+Ryan                                                38287                       
+Sahgal                                              83431                       
+Sass                                                 7910                       
+Schafer                                             66041                       
+Schwartz                                            40815                       
+Sibley                                              31791                       
+Singiser                                            62201                       
+Starkey                                             10127                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Swanson                                              5124                       
+Tamarin                                             15167                       
+Tchen                                               45981                       
+Agnew                                               11546                       
+Bauer                                               47201                       
+Beliveau                                             9237                       
+Bhowmik                                             44786                       
+Brennan                                             70069                       
+Buffett                                             46138                       
+Carrier                                             44138                       
+Cherlin                                             81411                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Cizner                                              81995                       
+Cokley                                              27248                       
+Colvin                                              90745                       
+Cuellar                                             82650                       
+Cutter                                              44944                       
+Deese                                               51868                       
+Dillon                                              29228                       
+Donilon                                             86805                       
+Dorsett                                             38666                       
+Fernandez                                           98362                       
+Frank                                               46793                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Frankel                                             56205                       
+Frye                                                15992                       
+Gonzalez                                            72561                       
+Graham                                              79044                       
+Hoang                                               75020                       
+Hopkins                                             36117                       
+Inouye                                              54307                       
+Johnson                                             38041                       
+Larus                                               60346                       
+Turton                                              33891                       
+Voorman                                             36938                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Watson                                              44101                       
+Wright                                              38344                       
+Lippert                                             35209                       
+Lovett                                              82800                       
+Martin                                              81440                       
+Massey                                              51427                       
+Mattson                                             62920                       
+McDonough                                           20338                       
+Milakofsky                                          45761                       
+Miranda                                             57575                       
+Mu??oz                                              17144                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Muntz                                               50555                       
+Odio                                                22098                       
+Pojman                                              16187                       
+Pope                                                85155                       
+Rodriguez                                           12659                       
+Sutphen                                             89716                       
+Thomas                                              99708                       
+Asen                                                39177                       
+Belive                                              73584                       
+Browner                                             18406                       
+Brundage                                            21119                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Brush                                               72685                       
+Cardwell                                            89211                       
+Chen                                                21002                       
+Chiodo                                              42663                       
+Corrigan                                            96508                       
+Crowley                                             42278                       
+Davies                                               5132                       
+DeGuzman Jr.                                        98960                       
+Devine                                              78076                       
+Edgerton                                            83239                       
+Edmonds                                             19755                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Eisen                                               17204                       
+Espinel                                             10048                       
+Favreau                                             72186                       
+Gardaphe                                            34076                       
+Gillette                                             7864                       
+Gomez                                               67206                       
+Gottry                                              69990                       
+Grant                                               44381                       
+Green                                               50810                       
+Harper                                              48917                       
+Hughes                                              63891                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Hurwitz                                             67392                       
+Juska                                               96147                       
+Kammerer                                            80220                       
+Kimball                                             68760                       
+Kommareddi                                          74728                       
+Kravis                                              70294                       
+LaBolt                                              27891                       
+Lerner                                              51447                       
+Lewin                                               76464                       
+Whichard                                             6576                       
+Zichal                                              26149                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Lu                                                  60103                       
+Naidoff                                             76007                       
+Narechania                                          31717                       
+Nicholson Jr.                                       25079                       
+Oxtoby                                              81572                       
+Pipkins                                             50386                       
+Portilla                                            40996                       
+Posey                                               98578                       
+Richardson                                          60516                       
+Rittner                                             69779                       
+Roach                                               22192                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Ruemmler                                            22740                       
+Samuels                                             51175                       
+Schmuck                                             19051                       
+Simas                                               52361                       
+Skoczek                                             77649                       
+Spencer                                             34096                       
+Ayling                                              50518                       
+Becnel                                              83094                       
+Binns                                               37475                       
+Birdsall                                            80798                       
+Bond                                                17265                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Branch                                              52905                       
+Brewer                                              57970                       
+Brown                                               90730                       
+Campos                                              12957                       
+Carter                                              24399                       
+Claude                                              88726                       
+Cohen                                               76597                       
+Davis                                                5536                       
+Dunn                                                99224                       
+Edwards                                             43342                       
+Emanuel                                             90762                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Faulman                                             43920                       
+Gavin Jr.                                           30127                       
+Greene                                              53758                       
+Hegde                                               79463                       
+Hernandez                                           43860                       
+Hiatt                                               65784                       
+Hogan                                               30506                       
+Kochman                                             14160                       
+Koo                                                 68002                       
+Krass                                               66657                       
+Lartey                                              15066                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Leitner-Laserna                                     81443                       
+Lelyveld                                            48508                       
+Lezotte                                             57869                       
+Liegel                                              97856                       
+Lillie                                              25246                       
+Trainor                                             53388                       
+Tranchin                                            60365                       
+Turk                                                32246                       
+Valencia                                            88730                       
+Vogel                                               54481                       
+Wade                                                79119                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Love                                                50833                       
+Maska                                               83964                       
+McGrath                                             51115                       
+Metcalf                                             13804                       
+Mrazek                                              58169                       
+Neralla                                             50922                       
+Paige                                               40220                       
+Papa                                                41920                       
+Pfeiffer                                            51278                       
+Phadke                                              13699                       
+Pulliam                                             47319                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Schuker                                             71498                       
+Smoot                                               30637                       
+Stickel                                             57911                       
+Stoev                                               18145                       
+Summers                                              8155                       
+Sweeney                                             43256                       
+Teehee                                              18520                       
+Tennison                                            49751                       
+Terrell                                             47541                       
+Albino                                              62241                       
+Anderson                                            60773                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Baldassaro                                          10774                       
+Beinart                                             55826                       
+Blake                                               15975                       
+Chambers                                            61345                       
+Coven                                               79764                       
+Cuba                                                20971                       
+Cunningham                                          65326                       
+DeGuzman                                            55017                       
+DeRosa                                              78343                       
+Fenn                                                89175                       
+Finlen                                              74725                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Fiscus                                              90035                       
+Fitts                                               38931                       
+Ford                                                11927                       
+Gage                                                30385                       
+Gray                                                79080                       
+Hanson                                               7703                       
+Harris                                              76783                       
+Hash                                                22859                       
+Jabbour                                             15321                       
+Jackson                                             38155                       
+Jarrett                                             40703                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Jarvis-Shean                                        39354                       
+Jean-Pierre                                         61652                       
+Kalbaugh                                            61024                       
+Kale                                                41112                       
+Kelly                                               38765                       
+Levine                                              98139                       
+Tucker                                               7906                       
+Watkins                                             89487                       
+Webster                                             49502                       
+Young Jr.                                           60255                       
+Young                                               34945                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Zelman                                              61808                       
+Lorjuste                                            45309                       
+Markovitz                                           30879                       
+McBride                                             29775                       
+McNeal                                              23495                       
+Monteiro                                             5939                       
+Nathan                                              18563                       
+Neiman                                              31095                       
+Ocampo                                              26003                       
+Offerman                                            98735                       
+Olmos                                               81250                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Olson                                               78425                       
+Ortiz                                               56022                       
+Pate                                                36991                       
+Pourmorad                                           20848                       
+Rivadeneira                                         79938                       
+Robertson                                           61115                       
+Rosalsky                                            28840                       
+Sabochik                                            82906                       
+Samuels Jr.                                         83244                       
+Sanders                                             96595                       
+Schiliro                                            22425                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Shah                                                66798                       
+Sheehy                                              91939                       
+Strautmanis                                         49740                       
+Swire                                               59483                       
+Bassin                                              82670                       
+Bressler                                            10458                       
+Burman                                              14829                       
+Carden                                              15272                       
+Douglas                                             13288                       
+DuBois                                              50983                       
+Dyer                                                20034                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Earnest                                             20915                       
+Firestone                                           63706                       
+Garcia                                              30422                       
+Hennigan                                            31324                       
+Hornsby                                             92643                       
+Hurley                                              33798                       
+Jamison                                             97787                       
+Kim                                                 21594                       
+King                                                91571                       
+Kramer                                              16581                       
+Lee                                                 91726                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Leger                                               71345                       
+Lepow                                               77500                       
+Thorbjornsen                                        40962                       
+Tubman                                              97228                       
+Tucci                                               62605                       
+Vietor                                              81045                       
+Wang-Levine                                         86150                       
+Witt                                                86082                       
+Lipton                                              66927                       
+McCathran                                           27053                       
+Mehrbani                                            26884                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Millison                                            11548                       
+Moilanen                                            99792                       
+Nabors                                              13549                       
+Nelson                                              35233                       
+Northern                                            33324                       
+Rathod                                              16211                       
+Reeves                                              26851                       
+Santucci                                            77077                       
+Saunders                                            41037                       
+Schaub                                              19649                       
+Sinha                                               44956                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Tate-Gilmore                                         8847                       
+Abrams                                              82347                       
+Attili                                              29634                       
+Axelrod                                             49646                       
+Bernard                                             77725                       
+Beverly                                             77709                       
+Burton                                              20411                       
+Campoverdi                                          94487                       
+Camu??ez                                            74970                       
+Castillo                                            67940                       
+Chhabra                                             94925                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Conrad                                               7760                       
+Cusack                                              89166                       
+De Sio Jr.                                          12346                       
+DeParle                                             40528                       
+Donovan                                             68820                       
+Droege                                              91540                       
+Fernkas                                             76756                       
+Flatgard                                            37325                       
+Freeman                                             35172                       
+Godfrey                                             57531                       
+Goodman                                             19826                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Greenawalt                                          29464                       
+Jarvis                                              93939                       
+Jones                                               58746                       
+Jung                                                42535                       
+Kocher                                              19494                       
+Kumar                                               10875                       
+Lechtenberg                                         38824                       
+Ledbetter                                           36243                       
+Lesser                                              36527                       
+Verrilli                                            20428                       
+Walsh                                               74072                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Winter                                              95980                       
+Lipsky                                              27146                       
+Luck                                                18687                       
+Mack                                                74937                       
+Mastromonaco                                        78016                       
+Mayekar                                             75532                       
+McLaughlin                                          61120                       
+Millett                                             54022                       
+Nguyen                                              61853                       
+Odintz                                              29813                       
+Perez                                               16050                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Phillips                                            18894                       
+Roberts                                             40320                       
+Roddick                                             77369                       
+Rundlet                                             26772                       
+Setser                                              10080                       
+Smith                                                4154                       
+Sobel                                               57023                       
+Stoneman                                            34608                       
+Stracko                                             55863                       
+Amorsingh                                           44113                       
+Andrias                                             38895                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Baggetto                                            62593                       
+Baskerville Jr.                                     24882                       
+Bisi                                                44129                       
+Block                                               55521                       
+Blount                                              16549                       
+Bookey-Baker                                        13952                       
+Brooke                                              51938                       
+Burnough                                            14915                       
+Campbell                                            49042                       
+Canery                                              63920                       
+Cushman                                             22072                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Dale                                                21447                       
+Fergenson                                           64103                       
+Finkenbinder                                        85362                       
+Furman                                              16060                       
+Gibbs                                               29940                       
+Gottlieb                                            45562                       
+Hable                                               38609                       
+Higginbottom                                        62138                       
+Hitchcock                                           46222                       
+Johnston                                            71424                       
+Kang                                                55146                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Keenan                                               6833                       
+Kelleher Jr.                                        20711                       
+Kiley                                               63825                       
+Kohnke                                              86072                       
+Lehrich                                             71518                       
+Tseggai                                             40483                       
+Utech                                               89687                       
+Vale                                                75356                       
+Vega                                                70422                       
+Weiser                                              78021                       
+Whitty                                              93954                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Williams                                            40108                       
+Wilson                                              77667                       
+Wong                      testing                   30236                       
+
+432 rows selected.
+
+SQL> select * from alphacoemp where name = 'Stone';
+
+no rows selected
+
+SQL> select calcsalaryrange('Kang', 2) FROM DUAL;
+select calcsalaryrange('Kang', 2) FROM DUAL
+       *
+ERROR at line 1:
+ORA-00904: "CALCSALARYRANGE": invalid identifier 
+
+
+SQL> SELECT calcSalaryRaise('Kang', 2) FROM DUAL;
+
+CALCSALARYRAISE('KANG',2)                                                       
+-------------------------                                                       
+                  1102.92                                                       
+
+SQL> start question2_b
+
+no rows selected
+
+SQL> start question2_b
+
+NAME                      TITLE                CURRENTSALARY  NEWSALARY         
+------------------------- -------------------- ------------- ----------         
+Kang                                                   55146       1102         
+
+SQL> start question2
+
+Function created.
+
+No errors.
+SQL> SELECT calcSalaryRaise('kang', 2) FROM DUAL;
+
+CALCSALARYRAISE('KANG',2)                                                       
+-------------------------                                                       
+                  1102.92                                                       
+
+SQL> start question3_init
+
+Table created.
+
+SQL> start question3
+
+Warning: Function created with compilation errors.
+
+SELECT countByTitle('director')
+       *
+ERROR at line 1:
+ORA-06575: Package or function COUNTBYTITLE is in an invalid state 
+
+
+  3  
+SQL> start question3
+
+Warning: Function created with compilation errors.
+
+Errors for FUNCTION COUNTBYTITLE:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+8/7      PL/SQL: SQL Statement ignored                                          
+14/5     PL/SQL: ORA-00933: SQL command not properly ended                      
+SELECT countByTitle('director')
+       *
+ERROR at line 1:
+ORA-06575: Package or function COUNTBYTITLE is in an invalid state 
+
+
+SELECT countByTitle('advisor')
+       *
+ERROR at line 1:
+ORA-06575: Package or function COUNTBYTITLE is in an invalid state 
+
+
+SQL> start question3;
+
+Warning: Function created with compilation errors.
+
+Errors for FUNCTION COUNTBYTITLE:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+8/7      PL/SQL: SQL Statement ignored                                          
+14/5     PL/SQL: ORA-00933: SQL command not properly ended                      
+SQL> start question3
+
+Function created.
+
+No errors.
+SQL> start question3_query
+
+COUNTBYTITLE('DIRECTOR')                                                        
+------------------------                                                        
+                                                                                
+
+
+COUNTBYTITLE('ADVISOR')                                                         
+-----------------------                                                         
+                                                                                
+
+SQL> exec assignJobTitlesAndSalaries()
+BEGIN assignJobTitlesAndSalaries(); END;
+
+*
+ERROR at line 1:
+ORA-01013: user requested cancel of current operation 
+
+
+
+SQL> create table AlphaCoEmp2 AS SELECT * FROM AlphaCoEmp;
+
+Table created.
+
+SQL> start question1
+
+Procedure created.
+
+No errors.
+SQL> exec assignJobTitlesAndSalaries
+BEGIN assignJobTitlesAndSalaries; END;
+
+*
+ERROR at line 1:
+ORA-06532: Subscript outside of limit 
+ORA-06512: at "DLEE.ASSIGNJOBTITLESANDSALARIES", line 1 
+ORA-06512: at line 1 
+
+
+SQL> start question1
+
+Procedure created.
+
+No errors.
+SQL> exec assignJobTitlesAndSalaries
+BEGIN assignJobTitlesAndSalaries; END;
+
+*
+ERROR at line 1:
+ORA-01013: user requested cancel of current operation 
+
+
+
+SQL> drop table AlphaCoEmp2;
+
+Table dropped.
+
+SQL> create table AlphaCoEmp2 AS SELECT * FROM AlphaCoEmp;
+
+Table created.
+
+SQL> exec assignJobTitlesAndSalaries()
+BEGIN assignJobTitlesAndSalaries(); END;
+
+*
+ERROR at line 1:
+ORA-01013: user requested cancel of current operation 
+
+
+
+SQL> start question1;
+
+Procedure created.
+
+No errors.
+SQL> drop table AlphaCoEmp2;
+
+Table dropped.
+
+SQL> exec assignJobTitlesAndSalaries
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from alphacoemp;
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Loeb                      director                 100000                       
+London                    advisor                  130000                       
+Maher                     assistant                600000                       
+Monje Jr.                 supervisor               800000                       
+Noel                      ceo                     1000000                       
+Oleske                    director                 100000                       
+Psaki                     director                 100000                       
+Roche                     ceo                     1000000                       
+Rouse                     director                 100000                       
+Schulman                  advisor                  130000                       
+Seymour                   ceo                     1000000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Shaw                      advisor                  130000                       
+Sher                      manager                  500000                       
+Siegel                    ceo                     1000000                       
+Sirbu                     assistant                600000                       
+Sutton                    ceo                     1000000                       
+Taggart Jr.               supervisor               800000                       
+Adams                     ceo                     1000000                       
+Alley                     ceo                     1000000                       
+Anello                    supervisor               800000                       
+Barnes                    assistant                600000                       
+Bedingfield               director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Clarke                    ceo                     1000000                       
+Cobbina                   manager                  500000                       
+Dalheim                   assistant                600000                       
+Ealons                    assistant                600000                       
+Farrell                   advisor                  130000                       
+Gaspard                   ceo                     1000000                       
+Heimbach                  assistant                600000                       
+Kennedy                   manager                  500000                       
+Lewis                     assistant                600000                       
+Liddell-Westefeld         ceo                     1000000                       
+Limon                     director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Wear                      supervisor               800000                       
+Yeager Kaplan             supervisor               800000                       
+Mackey                    ceo                     1000000                       
+McCarthy                  manager                  500000                       
+McGuire                   director                 100000                       
+Mueller                   assistant                600000                       
+Murtha                    director                 100000                       
+Parker                    supervisor               800000                       
+Quinn                     manager                  500000                       
+Reed                      supervisor               800000                       
+Sahgal                    ceo                     1000000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Sass                      director                 100000                       
+Schwartz                  director                 100000                       
+Singiser                  advisor                  130000                       
+Starkey                   ceo                     1000000                       
+Swanson                   ceo                     1000000                       
+Tchen                     supervisor               800000                       
+Bauer                     director                 100000                       
+Bhowmik                   manager                  500000                       
+Brennan                   manager                  500000                       
+Carrier                   assistant                600000                       
+Cizner                    manager                  500000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Colvin                    assistant                600000                       
+Cutter                    manager                  500000                       
+Deese                     director                 100000                       
+Donilon                   supervisor               800000                       
+Fernandez                 director                 100000                       
+Frankel                   ceo                     1000000                       
+Frye                      advisor                  130000                       
+Graham                    manager                  500000                       
+Hoang                     advisor                  130000                       
+Inouye                    assistant                600000                       
+Johnson                   ceo                     1000000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Turton                    manager                  500000                       
+Watson                    manager                  500000                       
+Lippert                   manager                  500000                       
+Martin                    assistant                600000                       
+Massey                    advisor                  130000                       
+McDonough                 director                 100000                       
+Milakofsky                ceo                     1000000                       
+Mu??oz                    manager                  500000                       
+Odio                      advisor                  130000                       
+Pope                      manager                  500000                       
+Rodriguez                 advisor                  130000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Sutphen                   ceo                     1000000                       
+Asen                      manager                  500000                       
+Belive                    ceo                     1000000                       
+Browner                   ceo                     1000000                       
+Brush                     assistant                600000                       
+Chen                      supervisor               800000                       
+Corrigan                  manager                  500000                       
+Crowley                   assistant                600000                       
+DeGuzman Jr.              director                 100000                       
+Edgerton                  advisor                  130000                       
+Eisen                     director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Favreau                   ceo                     1000000                       
+Gardaphe                  manager                  500000                       
+Gomez                     director                 100000                       
+Gottry                    director                 100000                       
+Green                     supervisor               800000                       
+Hughes                    ceo                     1000000                       
+Hurwitz                   director                 100000                       
+Kimball                   manager                  500000                       
+Kommareddi                assistant                600000                       
+LaBolt                    assistant                600000                       
+Lerner                    ceo                     1000000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Whichard                  ceo                     1000000                       
+Lu                        assistant                600000                       
+Naidoff                   manager                  500000                       
+Nicholson Jr.             director                 100000                       
+Pipkins                   director                 100000                       
+Portilla                  advisor                  130000                       
+Richardson                advisor                  130000                       
+Roach                     manager                  500000                       
+Ruemmler                  advisor                  130000                       
+Schmuck                   supervisor               800000                       
+Skoczek                   director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Ayling                    director                 100000                       
+Becnel                    ceo                     1000000                       
+Birdsall                  director                 100000                       
+Brewer                    supervisor               800000                       
+Brown                     advisor                  130000                       
+Carter                    advisor                  130000                       
+Cohen                     ceo                     1000000                       
+Davis                     director                 100000                       
+Edwards                   assistant                600000                       
+Faulman                   assistant                600000                       
+Greene                    supervisor               800000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Hegde                     ceo                     1000000                       
+Hiatt                     assistant                600000                       
+Kochman                   supervisor               800000                       
+Krass                     assistant                600000                       
+Leitner-Laserna           advisor                  130000                       
+Lezotte                   manager                  500000                       
+Lillie                    manager                  500000                       
+Trainor                   advisor                  130000                       
+Turk                      director                 100000                       
+Vogel                     supervisor               800000                       
+Wade                      manager                  500000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Maska                     advisor                  130000                       
+Metcalf                   manager                  500000                       
+Neralla                   assistant                600000                       
+Papa                      manager                  500000                       
+Phadke                    ceo                     1000000                       
+Pulliam                   supervisor               800000                       
+Smoot                     manager                  500000                       
+Stickel                   director                 100000                       
+Summers                   assistant                600000                       
+Teehee                    manager                  500000                       
+Terrell                   manager                  500000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Albino                    director                 100000                       
+Baldassaro                assistant                600000                       
+Blake                     manager                  500000                       
+Chambers                  assistant                600000                       
+Cuba                      manager                  500000                       
+DeGuzman                  ceo                     1000000                       
+DeRosa                    supervisor               800000                       
+Finlen                    manager                  500000                       
+Fitts                     ceo                     1000000                       
+Ford                      manager                  500000                       
+Gray                      supervisor               800000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Hanson                    ceo                     1000000                       
+Hash                      manager                  500000                       
+Jackson                   director                 100000                       
+Jarvis-Shean              director                 100000                       
+Kalbaugh                  advisor                  130000                       
+Kale                      manager                  500000                       
+Kelly                     director                 100000                       
+Tucker                    supervisor               800000                       
+Webster                   assistant                600000                       
+Young                     director                 100000                       
+Lorjuste                  assistant                600000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+McBride                   director                 100000                       
+McNeal                    director                 100000                       
+Nathan                    ceo                     1000000                       
+Neiman                    assistant                600000                       
+Offerman                  manager                  500000                       
+Olson                     assistant                600000                       
+Pate                      advisor                  130000                       
+Rivadeneira               assistant                600000                       
+Robertson                 manager                  500000                       
+Sabochik                  manager                  500000                       
+Samuels Jr.               ceo                     1000000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Sanders                   manager                  500000                       
+Shah                      assistant                600000                       
+Strautmanis               supervisor               800000                       
+Swire                     ceo                     1000000                       
+Bressler                  ceo                     1000000                       
+Carden                    director                 100000                       
+Douglas                   advisor                  130000                       
+DuBois                    ceo                     1000000                       
+Earnest                   ceo                     1000000                       
+Garcia                    manager                  500000                       
+Hennigan                  supervisor               800000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Hurley                    assistant                600000                       
+Kim                       director                 100000                       
+Kramer                    manager                  500000                       
+Leger                     assistant                600000                       
+Lepow                     ceo                     1000000                       
+Tubman                    director                 100000                       
+Tucci                     advisor                  130000                       
+Wang-Levine               supervisor               800000                       
+Witt                      ceo                     1000000                       
+McCathran                 manager                  500000                       
+Millison                  ceo                     1000000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Moilanen                  assistant                600000                       
+Nelson                    director                 100000                       
+Northern                  ceo                     1000000                       
+Reeves                    advisor                  130000                       
+Saunders                  manager                  500000                       
+Schaub                    manager                  500000                       
+Tate-Gilmore              ceo                     1000000                       
+Abrams                    supervisor               800000                       
+Axelrod                   manager                  500000                       
+Beverly                   supervisor               800000                       
+Campoverdi                director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Castillo                  supervisor               800000                       
+Chhabra                   ceo                     1000000                       
+Cusack                    manager                  500000                       
+DeParle                   advisor                  130000                       
+Donovan                   manager                  500000                       
+Droege                    ceo                     1000000                       
+Flatgard                  supervisor               800000                       
+Godfrey                   supervisor               800000                       
+Greenawalt                assistant                600000                       
+Jarvis                    manager                  500000                       
+Jung                      director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Lechtenberg               advisor                  130000                       
+Ledbetter                 supervisor               800000                       
+Verrilli                  assistant                600000                       
+Winter                    advisor                  130000                       
+Luck                      director                 100000                       
+Mastromonaco              advisor                  130000                       
+McLaughlin                advisor                  130000                       
+Nguyen                    assistant                600000                       
+Perez                     director                 100000                       
+Roberts                   manager                  500000                       
+Roddick                   advisor                  130000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Rundlet                   director                 100000                       
+Smith                     director                 100000                       
+Stracko                   director                 100000                       
+Amorsingh                 supervisor               800000                       
+Baggetto                  assistant                600000                       
+Bisi                      assistant                600000                       
+Block                     assistant                600000                       
+Blount                    ceo                     1000000                       
+Brooke                    director                 100000                       
+Burnough                  manager                  500000                       
+Campbell                  manager                  500000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Cushman                   manager                  500000                       
+Fergenson                 manager                  500000                       
+Finkenbinder              ceo                     1000000                       
+Gibbs                     supervisor               800000                       
+Hable                     manager                  500000                       
+Hitchcock                 supervisor               800000                       
+Johnston                  manager                  500000                       
+Keenan                    assistant                600000                       
+Kiley                     manager                  500000                       
+Kohnke                    assistant                600000                       
+Tseggai                   director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Vale                      manager                  500000                       
+Weiser                    supervisor               800000                       
+Williams                  manager                  500000                       
+Wong                      director                 100000                       
+Lipton                    assistant                600000                       
+Messina                   manager                  500000                       
+Newell                    manager                  500000                       
+Page                      advisor                  130000                       
+Reinstein                 assistant                600000                       
+Sathe                     assistant                600000                       
+Shapiro                   director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Showers                   manager                  500000                       
+Stephens                  assistant                600000                       
+Terry                     assistant                600000                       
+Aldy Jr.                  supervisor               800000                       
+Bates                     assistant                600000                       
+Chaifetz                  assistant                600000                       
+Crutchfield               director                 100000                       
+Escobar                   ceo                     1000000                       
+Groth                     manager                  500000                       
+Jawando                   director                 100000                       
+Konwinski                 assistant                600000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Vanderslice               assistant                600000                       
+White                     manager                  500000                       
+Lynn                      director                 100000                       
+McGinnis                  director                 100000                       
+Mosteller                 supervisor               800000                       
+Onek                      supervisor               800000                       
+Papas                     director                 100000                       
+Paulsen                   assistant                600000                       
+Raizk                     assistant                600000                       
+Ryan                      assistant                600000                       
+Schafer                   advisor                  130000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Sibley                    advisor                  130000                       
+Tamarin                   assistant                600000                       
+Agnew                     supervisor               800000                       
+Beliveau                  manager                  500000                       
+Buffett                   manager                  500000                       
+Cherlin                   supervisor               800000                       
+Cokley                    director                 100000                       
+Cuellar                   manager                  500000                       
+Dillon                    director                 100000                       
+Dorsett                   director                 100000                       
+Frank                     supervisor               800000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Gonzalez                  assistant                600000                       
+Hopkins                   manager                  500000                       
+Larus                     manager                  500000                       
+Voorman                   supervisor               800000                       
+Wright                    assistant                600000                       
+Lovett                    supervisor               800000                       
+Mattson                   supervisor               800000                       
+Miranda                   assistant                600000                       
+Muntz                     director                 100000                       
+Pojman                    assistant                600000                       
+Thomas                    assistant                600000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Brundage                  advisor                  130000                       
+Cardwell                  director                 100000                       
+Chiodo                    director                 100000                       
+Davies                    assistant                600000                       
+Devine                    director                 100000                       
+Edmonds                   advisor                  130000                       
+Espinel                   advisor                  130000                       
+Gillette                  assistant                600000                       
+Grant                     director                 100000                       
+Harper                    assistant                600000                       
+Juska                     manager                  500000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Kammerer                  assistant                600000                       
+Kravis                    director                 100000                       
+Lewin                     manager                  500000                       
+Zichal                    supervisor               800000                       
+Narechania                director                 100000                       
+Oxtoby                    supervisor               800000                       
+Posey                     director                 100000                       
+Rittner                   manager                  500000                       
+Samuels                   supervisor               800000                       
+Simas                     supervisor               800000                       
+Spencer                   director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Binns                     supervisor               800000                       
+Bond                      manager                  500000                       
+Branch                    supervisor               800000                       
+Campos                    assistant                600000                       
+Claude                    assistant                600000                       
+Dunn                      director                 100000                       
+Emanuel                   manager                  500000                       
+Gavin Jr.                 director                 100000                       
+Hernandez                 manager                  500000                       
+Hogan                     director                 100000                       
+Koo                       assistant                600000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Lartey                    supervisor               800000                       
+Lelyveld                  manager                  500000                       
+Liegel                    supervisor               800000                       
+Tranchin                  director                 100000                       
+Valencia                  assistant                600000                       
+Love                      assistant                600000                       
+McGrath                   director                 100000                       
+Mrazek                    supervisor               800000                       
+Paige                     director                 100000                       
+Pfeiffer                  supervisor               800000                       
+Schuker                   supervisor               800000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Stoev                     director                 100000                       
+Sweeney                   supervisor               800000                       
+Tennison                  assistant                600000                       
+Anderson                  director                 100000                       
+Beinart                   manager                  500000                       
+Coven                     director                 100000                       
+Cunningham                assistant                600000                       
+Fenn                      supervisor               800000                       
+Fiscus                    manager                  500000                       
+Gage                      assistant                600000                       
+Harris                    ceo                     1000000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Jabbour                   director                 100000                       
+Jarrett                   assistant                600000                       
+Jean-Pierre               supervisor               800000                       
+Levine                    assistant                600000                       
+Watkins                   assistant                600000                       
+Young Jr.                 director                 100000                       
+Zelman                    director                 100000                       
+Markovitz                 assistant                600000                       
+Monteiro                  assistant                600000                       
+Ocampo                    assistant                600000                       
+Olmos                     supervisor               800000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Ortiz                     advisor                  130000                       
+Pourmorad                 director                 100000                       
+Rosalsky                  supervisor               800000                       
+Schiliro                  ceo                     1000000                       
+Sheehy                    assistant                600000                       
+Bassin                    ceo                     1000000                       
+Burman                    supervisor               800000                       
+Dyer                      director                 100000                       
+Firestone                 director                 100000                       
+Hornsby                   supervisor               800000                       
+Jamison                   assistant                600000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+King                      director                 100000                       
+Lee                       assistant                600000                       
+Thorbjornsen              assistant                600000                       
+Vietor                    director                 100000                       
+Mehrbani                  manager                  500000                       
+Nabors                    assistant                600000                       
+Rathod                    manager                  500000                       
+Santucci                  assistant                600000                       
+Sinha                     advisor                  130000                       
+Attili                    supervisor               800000                       
+Bernard                   supervisor               800000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Burton                    advisor                  130000                       
+Camu??ez                  assistant                600000                       
+Conrad                    supervisor               800000                       
+De Sio Jr.                supervisor               800000                       
+Fernkas                   director                 100000                       
+Freeman                   manager                  500000                       
+Goodman                   manager                  500000                       
+Jones                     manager                  500000                       
+Kocher                    supervisor               800000                       
+Kumar                     supervisor               800000                       
+Lesser                    director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Walsh                     director                 100000                       
+Lipsky                    manager                  500000                       
+Mack                      advisor                  130000                       
+Mayekar                   director                 100000                       
+Millett                   supervisor               800000                       
+Odintz                    assistant                600000                       
+Phillips                  supervisor               800000                       
+Setser                    director                 100000                       
+Sobel                     supervisor               800000                       
+Stoneman                  assistant                600000                       
+Andrias                   manager                  500000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Baskerville Jr.           advisor                  130000                       
+Bookey-Baker              manager                  500000                       
+Canery                    ceo                     1000000                       
+Dale                      director                 100000                       
+Furman                    assistant                600000                       
+Gottlieb                  supervisor               800000                       
+Higginbottom              director                 100000                       
+Kang                      director                 100000                       
+Kelleher Jr.              supervisor               800000                       
+Lehrich                   assistant                600000                       
+Utech                     assistant                600000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Vega                      supervisor               800000                       
+Whitty                    director                 100000                       
+Wilson                    advisor                  130000                       
+
+432 rows selected.
+
+SQL> select calcsalaryrange('kang', 2) from dual;
+select calcsalaryrange('kang', 2) from dual
+       *
+ERROR at line 1:
+ORA-00904: "CALCSALARYRANGE": invalid identifier 
+
+
+SQL> select calcSalaryRaise('kang', 2) from dual;
+
+CALCSALARYRAISE('KANG',2)                                                       
+-------------------------                                                       
+                     2000                                                       
+
+SQL> start question2_b
+
+NAME                      TITLE                CURRENTSALARY  NEWSALARY         
+------------------------- -------------------- ------------- ----------         
+Kang                      director                    100000       2000         
+
+SQL> start question3
+
+Function created.
+
+No errors.
+SQL> start question3_query
+
+COUNTBYTITLE('DIRECTOR')                                                        
+------------------------                                                        
+                      92                                                        
+
+
+COUNTBYTITLE('ADVISOR')                                                         
+-----------------------                                                         
+                     42                                                         
+
+SQL> start question4
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE SAVECOUNTBYTITLE:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+12/5     PL/SQL: Statement ignored                                              
+12/5     PLS-00201: identifier 'L_ASSISTANT_CNT' must be declared               
+SQL> start question4
+
+Procedure created.
+
+No errors.
+SQL> exec saveCountByTitle;
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from EmpStats;
+
+TITLE                  EMPCOUNT LASTMODIF                                       
+-------------------- ---------- ---------                                       
+advisor                      42 24-FEB-19                                       
+director                     92 24-FEB-19                                       
+assistant                    90 24-FEB-19                                       
+manager                      85 24-FEB-19                                       
+supervisor                   72 24-FEB-19                                       
+ceo                          51 24-FEB-19                                       
+
+6 rows selected.
+
+SQL> start question5
+
+Trigger created.
+
+No errors.
+SQL> INSERT INTO AlphaCoEmp VALUES('mickeymouse', 'advisor', null);
+
+1 row created.
+
+SQL> select * from EmpStats;
+
+TITLE                  EMPCOUNT LASTMODIF                                       
+-------------------- ---------- ---------                                       
+advisor                      43 24-FEB-19                                       
+director                     92 24-FEB-19                                       
+assistant                    90 24-FEB-19                                       
+manager                      85 24-FEB-19                                       
+supervisor                   72 24-FEB-19                                       
+ceo                          51 24-FEB-19                                       
+
+6 rows selected.
+
+SQL> drop trigger titlecountchange_trig;
+
+Trigger dropped.
+
+SQL> start question6
+
+Trigger created.
+
+No errors.
+SQL> delete from alphacoemp where name = 'mickeymouse';
+
+1 row deleted.
+
+SQL> select * from EmpStats;
+
+TITLE                  EMPCOUNT LASTMODIF                                       
+-------------------- ---------- ---------                                       
+advisor                      42 24-FEB-19                                       
+director                     92 24-FEB-19                                       
+assistant                    90 24-FEB-19                                       
+manager                      85 24-FEB-19                                       
+supervisor                   72 24-FEB-19                                       
+ceo                          51 24-FEB-19                                       
+
+6 rows selected.
+
+SQL> INSERT INTO AlphaCoEmp VALUES('mickeymouse', 'advisor', null);
+
+1 row created.
+
+SQL>  select * from EmpStats;
+
+TITLE                  EMPCOUNT LASTMODIF                                       
+-------------------- ---------- ---------                                       
+advisor                      43 24-FEB-19                                       
+director                     92 24-FEB-19                                       
+assistant                    90 24-FEB-19                                       
+manager                      85 24-FEB-19                                       
+supervisor                   72 24-FEB-19                                       
+ceo                          51 24-FEB-19                                       
+
+6 rows selected.
+
+SQL> spool off

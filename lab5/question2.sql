@@ -1,17 +1,17 @@
 CREATE OR REPLACE FUNCTION calcSalaryRaise (
-    p_name IN AlphaCoEmp.name % type
+    p_name IN AlphaCoEmp.name % TYPE
     , percentRaise IN NUMBER
 ) RETURN NUMBER 
 IS 
     l_salary AlphaCoEmp.salary % TYPE; 
-    l_raise AlphaCoEmp.salary  % TYPE; 
+    l_raise  AlphaCoEmp.salary % TYPE; 
     l_cnt INTEGER; 
 BEGIN 
     -- Find the current salary of p_name from AlphaCoEMP table. 
     SELECT salary
       INTO l_salary
       FROM AlphaCoEmp 
-     WHERE name = p_name; 
+     WHERE UPPER(name) = UPPER(p_name); 
     -- Calculate the raise amount 
     l_raise := l_salary * (percentRaise/100); 
 
@@ -21,7 +21,7 @@ BEGIN
     SELECT COUNT(*)
       INTO l_cnt
       FROM Emp_Work 
-     WHERE name = p_name; 
+     WHERE UPPER(name) = UPPER(p_name); 
 
     IF l_cnt >= 1 THEN 
         l_raise := l_raise + 1000; 
