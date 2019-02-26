@@ -16,19 +16,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
      if (!empty($empName)){
 		$empName = prepareInput($empName);
-		$salary = getSalaryFromDB($empName);
-		echo "Salary: of $empName is $salary <br>";
+                $sal_title = getSalaryFromDB($empName);
+                $salary = $sal_title[0];
+                $title = $sal_title[1];
+		echo "Salary: of $empName is $salary, they are an $title <br>";
 	 }
 }
 function getSalaryFromDB($name){
 	//connect to your database
-	$conn=oci_connect('username','password', '//dbserver.engr.scu.edu/db11g');
+	$conn=oci_connect('dlee','helloworld', '//dbserver.engr.scu.edu/db11g');
 	if(!$conn) {
 	     print "<br> connection failed:";
         exit;
 	}
 	//	 Parse the SQL query
-	$query = oci_parse($conn, "SELECT salary FROM AlphacoEmp where name= :bv");
+	$query = oci_parse($conn, "SELECT salary, title FROM AlphacoEmp where name= :bv");
 
 	oci_bind_by_name($query,':bv',$name);
 	// Execute the query
@@ -39,7 +41,8 @@ function getSalaryFromDB($name){
 		// or the column name as an associative array index to access the colum value
 		// Use the uppercase column names for the associative array indices
 		echo $row[0] . " and " . $row['SALARY']   . " are the same<br>\n";
-		$salary = $row['SALARY'];
+                $salary = $row['SALARY'];
+                $title = $row['TITLE'];
 	}
 	else {
 		echo "No such employee <br>\n";
@@ -47,7 +50,7 @@ function getSalaryFromDB($name){
 	oci_free_statement($query);
 	oci_close($conn);
 
-	return $salary;
+	return array($salary, $title);
 }
 function prepareInput($inputData){
 	// Removes any leading or trailing white space

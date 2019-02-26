@@ -297,4 +297,566 @@ SQL> select * from bankcust_6;
 CUSTN CUSTNAME             STREET                         CITY                  
 ----- -------------------- ------------------------------ --------------------  
 c1    Smith                32 Lincoln st                  SJ                    
-c2    Jones             
+c2    Jones                44 Benton st                   SJ                    
+c3    Peters               12 palm st                     SFO                   
+c20   Chen                 20 san felipo                  LA                    
+c33   Williams             11 cherryAve                   SFO                   
+
+SQL> select * from alphacoemp;
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Loeb                      director                 100000                       
+London                    advisor                  130000                       
+Maher                     assistant                600000                       
+Monje Jr.                 supervisor               800000                       
+Noel                      ceo                     1000000                       
+Oleske                    director                 100000                       
+Psaki                     director                 100000                       
+Roche                     ceo                     1000000                       
+Rouse                     director                 100000                       
+Schulman                  advisor                  130000                       
+Seymour                   ceo                     1000000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Shaw                      advisor                  130000                       
+Sher                      manager                  500000                       
+Siegel                    ceo                     1000000                       
+Sirbu                     assistant                600000                       
+Sutton                    ceo                     1000000                       
+Taggart Jr.               supervisor               800000                       
+Adams                     ceo                     1000000                       
+Alley                     ceo                     1000000                       
+Anello                    supervisor               800000                       
+Barnes                    assistant                600000                       
+Bedingfield               director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Clarke                    ceo                     1000000                       
+Cobbina                   manager                  500000                       
+Dalheim                   assistant                600000                       
+Ealons                    assistant                600000                       
+Farrell                   advisor                  130000                       
+Gaspard                   ceo                     1000000                       
+Heimbach                  assistant                600000                       
+Kennedy                   manager                  500000                       
+Lewis                     assistant                600000                       
+Liddell-Westefeld         ceo                     1000000                       
+Limon                     director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Wear                      supervisor               800000                       
+Yeager Kaplan             supervisor               800000                       
+Mackey                    ceo                     1000000                       
+McCarthy                  manager                  500000                       
+McGuire                   director                 100000                       
+Mueller                   assistant                600000                       
+Murtha                    director                 100000                       
+Parker                    supervisor               800000                       
+Quinn                     manager                  500000                       
+Reed                      supervisor               800000                       
+Sahgal                    ceo                     1000000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Sass                      director                 100000                       
+Schwartz                  director                 100000                       
+Singiser                  advisor                  130000                       
+Starkey                   ceo                     1000000                       
+Swanson                   ceo                     1000000                       
+Tchen                     supervisor               800000                       
+Bauer                     director                 100000                       
+Bhowmik                   manager                  500000                       
+Brennan                   manager                  500000                       
+Carrier                   assistant                600000                       
+Cizner                    manager                  500000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Colvin                    assistant                600000                       
+Cutter                    manager                  500000                       
+Deese                     director                 100000                       
+Donilon                   supervisor               800000                       
+Fernandez                 director                 100000                       
+Frankel                   ceo                     1000000                       
+Frye                      advisor                  130000                       
+Graham                    manager                  500000                       
+Hoang                     advisor                  130000                       
+Inouye                    assistant                600000                       
+Johnson                   ceo                     1000000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Turton                    manager                  500000                       
+Watson                    manager                  500000                       
+Lippert                   manager                  500000                       
+Martin                    assistant                600000                       
+Massey                    advisor                  130000                       
+McDonough                 director                 100000                       
+Milakofsky                ceo                     1000000                       
+Mu??oz                    manager                  500000                       
+Odio                      advisor                  130000                       
+Pope                      manager                  500000                       
+Rodriguez                 advisor                  130000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Sutphen                   ceo                     1000000                       
+Asen                      manager                  500000                       
+Belive                    ceo                     1000000                       
+Browner                   ceo                     1000000                       
+Brush                     assistant                600000                       
+Chen                      supervisor               800000                       
+Corrigan                  manager                  500000                       
+Crowley                   assistant                600000                       
+DeGuzman Jr.              director                 100000                       
+Edgerton                  advisor                  130000                       
+Eisen                     director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Favreau                   ceo                     1000000                       
+Gardaphe                  manager                  500000                       
+Gomez                     director                 100000                       
+Gottry                    director                 100000                       
+Green                     supervisor               800000                       
+Hughes                    ceo                     1000000                       
+Hurwitz                   director                 100000                       
+Kimball                   manager                  500000                       
+Kommareddi                assistant                600000                       
+LaBolt                    assistant                600000                       
+Lerner                    ceo                     1000000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Whichard                  ceo                     1000000                       
+Lu                        assistant                600000                       
+Naidoff                   manager                  500000                       
+Nicholson Jr.             director                 100000                       
+Pipkins                   director                 100000                       
+Portilla                  advisor                  130000                       
+Richardson                advisor                  130000                       
+Roach                     manager                  500000                       
+Ruemmler                  advisor                  130000                       
+Schmuck                   supervisor               800000                       
+Skoczek                   director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Ayling                    director                 100000                       
+Becnel                    ceo                     1000000                       
+Birdsall                  director                 100000                       
+Brewer                    supervisor               800000                       
+Brown                     advisor                  130000                       
+Carter                    advisor                  130000                       
+Cohen                     ceo                     1000000                       
+Davis                     director                 100000                       
+Edwards                   assistant                600000                       
+Faulman                   assistant                600000                       
+Greene                    supervisor               800000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Hegde                     ceo                     1000000                       
+Hiatt                     assistant                600000                       
+Kochman                   supervisor               800000                       
+Krass                     assistant                600000                       
+Leitner-Laserna           advisor                  130000                       
+Lezotte                   manager                  500000                       
+Lillie                    manager                  500000                       
+Trainor                   advisor                  130000                       
+Turk                      director                 100000                       
+Vogel                     supervisor               800000                       
+Wade                      manager                  500000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Maska                     advisor                  130000                       
+Metcalf                   manager                  500000                       
+Neralla                   assistant                600000                       
+Papa                      manager                  500000                       
+Phadke                    ceo                     1000000                       
+Pulliam                   supervisor               800000                       
+Smoot                     manager                  500000                       
+Stickel                   director                 100000                       
+Summers                   assistant                600000                       
+Teehee                    manager                  500000                       
+Terrell                   manager                  500000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Albino                    director                 100000                       
+Baldassaro                assistant                600000                       
+Blake                     manager                  500000                       
+Chambers                  assistant                600000                       
+Cuba                      manager                  500000                       
+DeGuzman                  ceo                     1000000                       
+DeRosa                    supervisor               800000                       
+Finlen                    manager                  500000                       
+Fitts                     ceo                     1000000                       
+Ford                      manager                  500000                       
+Gray                      supervisor               800000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Hanson                    ceo                     1000000                       
+Hash                      manager                  500000                       
+Jackson                   director                 100000                       
+Jarvis-Shean              director                 100000                       
+Kalbaugh                  advisor                  130000                       
+Kale                      manager                  500000                       
+Kelly                     director                 100000                       
+Tucker                    supervisor               800000                       
+Webster                   assistant                600000                       
+Young                     director                 100000                       
+Lorjuste                  assistant                600000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+McBride                   director                 100000                       
+McNeal                    director                 100000                       
+Nathan                    ceo                     1000000                       
+Neiman                    assistant                600000                       
+Offerman                  manager                  500000                       
+Olson                     assistant                600000                       
+Pate                      advisor                  130000                       
+Rivadeneira               assistant                600000                       
+Robertson                 manager                  500000                       
+Sabochik                  manager                  500000                       
+Samuels Jr.               ceo                     1000000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Sanders                   manager                  500000                       
+Shah                      assistant                600000                       
+Strautmanis               supervisor               800000                       
+Swire                     ceo                     1000000                       
+Bressler                  ceo                     1000000                       
+Carden                    director                 100000                       
+Douglas                   advisor                  130000                       
+DuBois                    ceo                     1000000                       
+Earnest                   ceo                     1000000                       
+Garcia                    manager                  500000                       
+Hennigan                  supervisor               800000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Hurley                    assistant                600000                       
+Kim                       director                 100000                       
+Kramer                    manager                  500000                       
+Leger                     assistant                600000                       
+Lepow                     ceo                     1000000                       
+Tubman                    director                 100000                       
+Tucci                     advisor                  130000                       
+Wang-Levine               supervisor               800000                       
+Witt                      ceo                     1000000                       
+McCathran                 manager                  500000                       
+Millison                  ceo                     1000000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Moilanen                  assistant                600000                       
+Nelson                    director                 100000                       
+Northern                  ceo                     1000000                       
+Reeves                    advisor                  130000                       
+Saunders                  manager                  500000                       
+Schaub                    manager                  500000                       
+Tate-Gilmore              ceo                     1000000                       
+Abrams                    supervisor               800000                       
+Axelrod                   manager                  500000                       
+Beverly                   supervisor               800000                       
+Campoverdi                director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Castillo                  supervisor               800000                       
+Chhabra                   ceo                     1000000                       
+Cusack                    manager                  500000                       
+DeParle                   advisor                  130000                       
+Donovan                   manager                  500000                       
+Droege                    ceo                     1000000                       
+Flatgard                  supervisor               800000                       
+Godfrey                   supervisor               800000                       
+Greenawalt                assistant                600000                       
+Jarvis                    manager                  500000                       
+Jung                      director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Lechtenberg               advisor                  130000                       
+Ledbetter                 supervisor               800000                       
+Verrilli                  assistant                600000                       
+Winter                    advisor                  130000                       
+Luck                      director                 100000                       
+Mastromonaco              advisor                  130000                       
+McLaughlin                advisor                  130000                       
+Nguyen                    assistant                600000                       
+Perez                     director                 100000                       
+Roberts                   manager                  500000                       
+Roddick                   advisor                  130000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Rundlet                   director                 100000                       
+Smith                     director                 100000                       
+Stracko                   director                 100000                       
+Amorsingh                 supervisor               800000                       
+Baggetto                  assistant                600000                       
+Bisi                      assistant                600000                       
+Block                     assistant                600000                       
+Blount                    ceo                     1000000                       
+Brooke                    director                 100000                       
+Burnough                  manager                  500000                       
+Campbell                  manager                  500000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Cushman                   manager                  500000                       
+Fergenson                 manager                  500000                       
+Finkenbinder              ceo                     1000000                       
+Gibbs                     supervisor               800000                       
+Hable                     manager                  500000                       
+Hitchcock                 supervisor               800000                       
+Johnston                  manager                  500000                       
+Keenan                    assistant                600000                       
+Kiley                     manager                  500000                       
+Kohnke                    assistant                600000                       
+Tseggai                   director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Vale                      manager                  500000                       
+Weiser                    supervisor               800000                       
+Williams                  manager                  500000                       
+Wong                      director                 100000                       
+Lipton                    assistant                600000                       
+Messina                   manager                  500000                       
+Newell                    manager                  500000                       
+Page                      advisor                  130000                       
+Reinstein                 assistant                600000                       
+Sathe                     assistant                600000                       
+Shapiro                   director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Showers                   manager                  500000                       
+Stephens                  assistant                600000                       
+Terry                     assistant                600000                       
+Aldy Jr.                  supervisor               800000                       
+Bates                     assistant                600000                       
+Chaifetz                  assistant                600000                       
+Crutchfield               director                 100000                       
+Escobar                   ceo                     1000000                       
+Groth                     manager                  500000                       
+Jawando                   director                 100000                       
+Konwinski                 assistant                600000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Vanderslice               assistant                600000                       
+White                     manager                  500000                       
+Lynn                      director                 100000                       
+McGinnis                  director                 100000                       
+Mosteller                 supervisor               800000                       
+Onek                      supervisor               800000                       
+Papas                     director                 100000                       
+Paulsen                   assistant                600000                       
+Raizk                     assistant                600000                       
+Ryan                      assistant                600000                       
+Schafer                   advisor                  130000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Sibley                    advisor                  130000                       
+Tamarin                   assistant                600000                       
+Agnew                     supervisor               800000                       
+Beliveau                  manager                  500000                       
+Buffett                   manager                  500000                       
+Cherlin                   supervisor               800000                       
+Cokley                    director                 100000                       
+Cuellar                   manager                  500000                       
+Dillon                    director                 100000                       
+Dorsett                   director                 100000                       
+Frank                     supervisor               800000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Gonzalez                  assistant                600000                       
+Hopkins                   manager                  500000                       
+Larus                     manager                  500000                       
+Voorman                   supervisor               800000                       
+Wright                    assistant                600000                       
+Lovett                    supervisor               800000                       
+Mattson                   supervisor               800000                       
+Miranda                   assistant                600000                       
+Muntz                     director                 100000                       
+Pojman                    assistant                600000                       
+Thomas                    assistant                600000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Brundage                  advisor                  130000                       
+Cardwell                  director                 100000                       
+Chiodo                    director                 100000                       
+Davies                    assistant                600000                       
+Devine                    director                 100000                       
+Edmonds                   advisor                  130000                       
+Espinel                   advisor                  130000                       
+Gillette                  assistant                600000                       
+Grant                     director                 100000                       
+Harper                    assistant                600000                       
+Juska                     manager                  500000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Kammerer                  assistant                600000                       
+Kravis                    director                 100000                       
+Lewin                     manager                  500000                       
+Zichal                    supervisor               800000                       
+Narechania                director                 100000                       
+Oxtoby                    supervisor               800000                       
+Posey                     director                 100000                       
+Rittner                   manager                  500000                       
+Samuels                   supervisor               800000                       
+Simas                     supervisor               800000                       
+Spencer                   director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Binns                     supervisor               800000                       
+Bond                      manager                  500000                       
+Branch                    supervisor               800000                       
+Campos                    assistant                600000                       
+Claude                    assistant                600000                       
+Dunn                      director                 100000                       
+Emanuel                   manager                  500000                       
+Gavin Jr.                 director                 100000                       
+Hernandez                 manager                  500000                       
+Hogan                     director                 100000                       
+Koo                       assistant                600000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Lartey                    supervisor               800000                       
+Lelyveld                  manager                  500000                       
+Liegel                    supervisor               800000                       
+Tranchin                  director                 100000                       
+Valencia                  assistant                600000                       
+Love                      assistant                600000                       
+McGrath                   director                 100000                       
+Mrazek                    supervisor               800000                       
+Paige                     director                 100000                       
+Pfeiffer                  supervisor               800000                       
+Schuker                   supervisor               800000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Stoev                     director                 100000                       
+Sweeney                   supervisor               800000                       
+Tennison                  assistant                600000                       
+Anderson                  director                 100000                       
+Beinart                   manager                  500000                       
+Coven                     director                 100000                       
+Cunningham                assistant                600000                       
+Fenn                      supervisor               800000                       
+Fiscus                    manager                  500000                       
+Gage                      assistant                600000                       
+Harris                    ceo                     1000000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Jabbour                   director                 100000                       
+Jarrett                   assistant                600000                       
+Jean-Pierre               supervisor               800000                       
+Levine                    assistant                600000                       
+Watkins                   assistant                600000                       
+Young Jr.                 director                 100000                       
+Zelman                    director                 100000                       
+Markovitz                 assistant                600000                       
+Monteiro                  assistant                600000                       
+Ocampo                    assistant                600000                       
+Olmos                     supervisor               800000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Ortiz                     advisor                  130000                       
+Pourmorad                 director                 100000                       
+Rosalsky                  supervisor               800000                       
+Schiliro                  ceo                     1000000                       
+Sheehy                    assistant                600000                       
+Bassin                    ceo                     1000000                       
+Burman                    supervisor               800000                       
+Dyer                      director                 100000                       
+Firestone                 director                 100000                       
+Hornsby                   supervisor               800000                       
+Jamison                   assistant                600000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+King                      director                 100000                       
+Lee                       assistant                600000                       
+Thorbjornsen              assistant                600000                       
+Vietor                    director                 100000                       
+Mehrbani                  manager                  500000                       
+Nabors                    assistant                600000                       
+Rathod                    manager                  500000                       
+Santucci                  assistant                600000                       
+Sinha                     advisor                  130000                       
+Attili                    supervisor               800000                       
+Bernard                   supervisor               800000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Burton                    advisor                  130000                       
+Camu??ez                  assistant                600000                       
+Conrad                    supervisor               800000                       
+De Sio Jr.                supervisor               800000                       
+Fernkas                   director                 100000                       
+Freeman                   manager                  500000                       
+Goodman                   manager                  500000                       
+Jones                     manager                  500000                       
+Kocher                    supervisor               800000                       
+Kumar                     supervisor               800000                       
+Lesser                    director                 100000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Walsh                     director                 100000                       
+Lipsky                    manager                  500000                       
+Mack                      advisor                  130000                       
+Mayekar                   director                 100000                       
+Millett                   supervisor               800000                       
+Odintz                    assistant                600000                       
+Phillips                  supervisor               800000                       
+Setser                    director                 100000                       
+Sobel                     supervisor               800000                       
+Stoneman                  assistant                600000                       
+Andrias                   manager                  500000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Baskerville Jr.           advisor                  130000                       
+Bookey-Baker              manager                  500000                       
+Canery                    ceo                     1000000                       
+Dale                      director                 100000                       
+Furman                    assistant                600000                       
+Gottlieb                  supervisor               800000                       
+Higginbottom              director                 100000                       
+Kang                      director                 100000                       
+Kelleher Jr.              supervisor               800000                       
+Lehrich                   assistant                600000                       
+Utech                     assistant                600000                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Vega                      supervisor               800000                       
+Whitty                    director                 100000                       
+Wilson                    advisor                  130000                       
+mickeymouse               advisor                                               
+
+433 rows selected.
+
+SQL> spool off
