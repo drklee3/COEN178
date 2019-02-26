@@ -1,0 +1,300 @@
+SQL> delete from bankcust_6;
+
+5 rows deleted.
+
+SQL> start part1_value
+SP2-0310: unable to open file "part1_value.sql"
+SQL> start part1_values
+From Trigger Customer NO:c1 Customer Name: Smith Customer City SJ               
+
+1 row created.
+
+From Trigger Customer NO:c2 Customer Name: Jones Customer City SJ               
+
+1 row created.
+
+From Trigger Customer NO:c3 Customer Name: Peters Customer City SFO             
+
+1 row created.
+
+From Trigger Customer NO:c20 Customer Name: Chen Customer City LA               
+
+1 row created.
+
+From Trigger Customer NO:c33 Customer Name: Williams Customer City SFO          
+
+1 row created.
+
+SQL> alter trigger display_customer_trig disable;
+
+Trigger altered.
+
+SQL> start part2_trigger
+
+Trigger created.
+
+No errors.
+SQL> start part2_values
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> select * from totals_6;
+
+CUSTN TOTALAMOUNT                                                               
+----- -----------                                                               
+c1           7000                                                               
+c2           9000                                                               
+c33           500                                                               
+c20           150                                                               
+
+SQL> start part3_update
+
+1 row updated.
+
+SQL> select * from totals_6;
+
+CUSTN TOTALAMOUNT                                                               
+----- -----------                                                               
+c1           7000                                                               
+c2           9000                                                               
+c33           500                                                               
+c20           150                                                               
+
+SQL> select * from accounts_6;
+
+ACCOU ACCOUNTTYP     AMOUNT CUSTN                                               
+----- ---------- ---------- -----                                               
+a1523 checking         1000 c1                                                  
+a2134 saving           5000 c1                                                  
+a4378 checking         1000 c2                                                  
+a5363 saving           8000 c2                                                  
+a7236 checking          500 c33                                                 
+a8577 checking          150 c20                                                 
+
+6 rows selected.
+
+SQL> start part4_trigger.sql
+
+Warning: Trigger created with compilation errors.
+
+SQL> start part4_trigger
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER ACCT_CUST_TRIG:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+7/9      PL/SQL: SQL Statement ignored                                          
+19/61    PL/SQL: ORA-00907: missing right parenthesis                           
+SQL> start part4_trigger
+
+Trigger created.
+
+No errors.
+SQL> start part2_values
+INSERT INTO ACCOUNTS_6 VALUES('a1523', 'checking', 2000.00, 'c1')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DLEE.SYS_C00705634) violated 
+
+
+INSERT INTO ACCOUNTS_6 VALUES('a2134', 'saving',   5000.00, 'c1')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DLEE.SYS_C00705634) violated 
+
+
+INSERT INTO ACCOUNTS_6 VALUES('a4378', 'checking', 1000.00, 'c2')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DLEE.SYS_C00705634) violated 
+
+
+INSERT INTO ACCOUNTS_6 VALUES('a5363', 'saving',   8000.00, 'c2')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DLEE.SYS_C00705634) violated 
+
+
+INSERT INTO ACCOUNTS_6 VALUES('a7236', 'checking', 500.00,  'c33')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DLEE.SYS_C00705634) violated 
+
+
+INSERT INTO ACCOUNTS_6 VALUES('a8577', 'checking', 150.00,  'c20')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (DLEE.SYS_C00705634) violated 
+
+
+SQL> delete from accounts_6;
+
+6 rows deleted.
+
+SQL> delete from totals_6;
+
+4 rows deleted.
+
+SQL> start part2_values
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> select * from totals_6;
+
+no rows selected
+
+SQL> select * from accounts_6;
+
+ACCOU ACCOUNTTYP     AMOUNT CUSTN                                               
+----- ---------- ---------- -----                                               
+a1523 checking         2000 c1                                                  
+a2134 saving           5000 c1                                                  
+a4378 checking         1000 c2                                                  
+a5363 saving           8000 c2                                                  
+a7236 checking          500 c33                                                 
+a8577 checking          150 c20                                                 
+
+6 rows selected.
+
+SQL> start part4_trigge
+SP2-0310: unable to open file "part4_trigge.sql"
+SQL> start part4_trigger
+
+Trigger created.
+
+No errors.
+SQL> start part4_trigger
+CREATE OR REPLACE TRIGGER ​Acct_Cust_Trig
+                          *
+ERROR at line 1:
+ORA-00911: invalid character 
+
+
+No errors.
+SQL> start part4_trigger
+
+Warning: Trigger created with compilation errors.
+
+Errors for TRIGGER ACCT_CUST_TRIG:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+7/9      PL/SQL: SQL Statement ignored                                          
+16/5     PL/SQL: ORA-00933: SQL command not properly ended                      
+24/4     PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         if                                                                     
+                                                                                
+SQL> start part4_trigger
+
+Trigger created.
+
+No errors.
+SQL> delete from accounts_6;
+
+6 rows deleted.
+
+SQL> delete from totals_6;
+
+0 rows deleted.
+
+SQL> start part2_values
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> select * from totals_6;
+
+CUSTN TOTALAMOUNT                                                               
+----- -----------                                                               
+c1           7000                                                               
+c2           9000                                                               
+c33           500                                                               
+c20           150                                                               
+
+SQL> start part3_update
+
+1 row updated.
+
+SQL> select * from totals_6;
+
+CUSTN TOTALAMOUNT                                                               
+----- -----------                                                               
+c1           6000                                                               
+c2           9000                                                               
+c33           500                                                               
+c20           150                                                               
+
+SQL> start part5_trigger
+
+Trigger created.
+
+No errors.
+SQL> start part5_update
+   SET custno = ’c99’
+                *
+ERROR at line 2:
+ORA-00911: invalid character 
+
+
+SQL> start part5_update
+UPDATE BANKCUST_6
+       *
+ERROR at line 1:
+ORA-20999: Cannot update a Primary Key 
+ORA-06512: at "DLEE.NOUPDATEPK_TRIG", line 3 
+ORA-04088: error during execution of trigger 'DLEE.NOUPDATEPK_TRIG' 
+
+
+SQL> select * from bankcust_6;
+
+CUSTN CUSTNAME             STREET                         CITY                  
+----- -------------------- ------------------------------ --------------------  
+c1    Smith                32 Lincoln st                  SJ                    
+c2    Jones             

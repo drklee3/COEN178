@@ -1,0 +1,10 @@
+CREATE OR REPLACE TRIGGER NoUpdatePK_trig
+AFTER UPDATE ON BANKCUST_6
+FOR EACH ROW
+BEGIN
+    IF UPDATING ('custno') THEN
+        RAISE_APPLICATION_ERROR(-20999,'Cannot update a Primary Key');
+    END IF;
+END;
+/
+show errors;
