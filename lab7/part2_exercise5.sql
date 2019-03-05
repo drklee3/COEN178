@@ -1,3 +1,5 @@
+SET LINESIZE 47
+
 COLUMN expenseDate   HEADING 'Date'
 COLUMN groceries     HEADING 'Groceries'
 COLUMN entertainment HEADING 'Entertainment'
@@ -7,14 +9,12 @@ TTITLE CENTER "Expense Report"
 
 SET UNDERLINE '='
 
-BREAK ON expenseDate SKIP 1
-
 COLUMN groceries     FORMAT $99,999.99
 COLUMN entertainment FORMAT $99,999.99
 COLUMN rent          FORMAT $99,999.99
 
-BREAK ON REPORT
-COMPUTE AVG SUM MAX LABEL TOTAL OF SALARY ON REPORT
+BREAK ON REPORT ON ROW SKIP 1
+COMPUTE AVG SUM MAX OF groceries entertainment rent ON REPORT
 
   SELECT expenseDate
          , groceries

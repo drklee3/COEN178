@@ -1,0 +1,547 @@
+SQL> start part1_exercise_trigger
+SP2-0310: unable to open file "part1_exercise_trigger.sql"
+SQL> start part1_exercise2_trigger
+    BEFORE INSERT OR UPDATE ON Course_Prereq
+                               *
+ERROR at line 2:
+ORA-00942: table or view does not exist 
+
+
+No errors.
+SQL> start part1_exercise1_trigger
+
+Trigger created.
+
+No errors.
+SQL> Insert into ItemOrder values ('o1',100);
+Insert into ItemOrder values ('o1',100)
+            *
+ERROR at line 1:
+ORA-04091: table DLEE.ITEMORDER is mutating, trigger/function may not see it 
+ORA-06512: at "DLEE.ITEMORDER_AFTER_INSERT_TRIG", line 4 
+ORA-04088: error during execution of trigger 'DLEE.ITEMORDER_AFTER_INSERT_TRIG' 
+
+
+SQL> start part1_exercise2_tables
+
+Table created.
+
+  7  start part1_exercise2_values
+  8  ;
+start part1_exercise2_values
+*
+ERROR at line 7:
+ORA-00922: missing or invalid option 
+
+
+SQL> start part1_exercise2_values;
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> start part1_exercise2_trigger;
+    BEFORE INSERT OR UPDATE ON Course_Prereq
+                               *
+ERROR at line 2:
+ORA-00942: table or view does not exist 
+
+
+No errors.
+SQL> start part1_exercise2_tables;
+CREATE TABLE Course (
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+  7  
+SQL> 
+SQL> drop table course;
+
+Table dropped.
+
+SQL> drop table course_prereq;
+drop table course_prereq
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> start part1_exercise2_tables;
+
+Table created.
+
+  7  
+SQL> start part1_exercise2_tables;
+CREATE TABLE Course (
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+
+Table created.
+
+SQL> start part1_exercise2_values
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> start part1_exercise2_trigger
+
+Trigger created.
+
+No errors.
+SQL> start part1_exercise2_values2
+
+1 row created.
+
+
+1 row created.
+
+
+  COURSENO   PREREQNO                                                           
+---------- ----------                                                           
+       121         11                                                           
+       121         10                                                           
+
+INSERT INTO Course_Prereq VALUES (121, 12)
+            *
+ERROR at line 1:
+ORA-20000: Only 2 prereqs for course 
+ORA-06512: at "DLEE.LIMITTEST", line 21 
+ORA-04088: error during execution of trigger 'DLEE.LIMITTEST' 
+
+
+
+  COURSENO   PREREQNO                                                           
+---------- ----------                                                           
+       121         11                                                           
+       121         10                                                           
+
+
+  COUNT(*)                                                                      
+----------                                                                      
+         2                                                                      
+
+
+0 rows updated.
+
+SQL> select * from course_prereqs;
+select * from course_prereqs
+              *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> select * from course_prereq;
+
+  COURSENO   PREREQNO                                                           
+---------- ----------                                                           
+       121         11                                                           
+       121         10                                                           
+
+SQL> insert into Course_Prereq values (133,12);
+
+1 row created.
+
+SQL> UPDATE COURSE_PREREQ set courseno = 121 where courseno = 133;
+UPDATE COURSE_PREREQ set courseno = 121 where courseno = 133
+       *
+ERROR at line 1:
+ORA-04091: table DLEE.COURSE_PREREQ is mutating, trigger/function may not see 
+it 
+ORA-06512: at "DLEE.LIMITTEST", line 6 
+ORA-04088: error during execution of trigger 'DLEE.LIMITTEST' 
+
+
+SQL> start part1_exercise3_trigger
+
+3 rows deleted.
+
+
+Trigger created.
+
+No errors.
+SQL> start part1_exercise3_values
+
+1 row created.
+
+
+1 row created.
+
+INSERT INTO Course_Prereq VALUES (121, 12)
+            *
+ERROR at line 1:
+ORA-20000: only 2 prereqs for course 
+ORA-06512: at "DLEE.LIMITTEST", line 21 
+ORA-04088: error during execution of trigger 'DLEE.LIMITTEST' 
+
+
+
+1 row created.
+
+
+  COURSENO   PREREQNO                                                           
+---------- ----------                                                           
+       121         11                                                           
+       121         10                                                           
+       133         12                                                           
+
+
+1 row updated.
+
+SQL> select * from course_prereq;
+
+  COURSENO   PREREQNO                                                           
+---------- ----------                                                           
+       121         11                                                           
+       121         10                                                           
+       121         12                                                           
+
+SQL> start report.sql
+****************************************************************
+Generating the Report
+
+CURDATE                                                                        
+-----------                                                                    
+04-Mar-2019                                                                    
+
+04-Mar-2019
+
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+item name          city                                                        
+------------------ ----------                                                  
+grocery            SJ                                                          
+books              SJ                                                          
+
+SQL> part2_exercise5_init
+SP2-0734: unknown command beginning "part2_exer..." - rest of line ignored.
+SQL> start part2_exercise5_init
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+EXPENSEDA  GROCERIES ENTERTAINMENT       RENT                                  
+--------- ---------- ------------- ----------                                  
+12-MAR-15      15.25          10.5        500                                  
+15-JUL-14      25.75             5        700                                  
+27-JAN-14         10            12        400                                  
+20-FEB-15         12            15        800                                  
+30-OCT-14          5             2        100                                  
+
+SQL> start part2_exercise5
+
+                                 Expense Report                                
+Date        Groceries Entertainment        Rent                                
+========= =========== ============= ===========                                
+12-MAR-15      $15.25        $10.50     $500.00                                
+15-JUL-14      $25.75         $5.00     $700.00                                
+27-JAN-14      $10.00        $12.00     $400.00                                
+20-FEB-15      $12.00        $15.00     $800.00                                
+30-OCT-14       $5.00         $2.00     $100.00                                
+
+SQL> start part2_exercise5
+
+                                 Expense Report                                
+Date        Groceries Entertainment        Rent                                
+========= =========== ============= ===========                                
+12-MAR-15      $15.25        $10.50     $500.00                                
+15-JUL-14      $25.75         $5.00     $700.00                                
+27-JAN-14      $10.00        $12.00     $400.00                                
+20-FEB-15      $12.00        $15.00     $800.00                                
+30-OCT-14       $5.00         $2.00     $100.00                                
+                                    -----------                                
+avg                                     $500.00                                
+maximum                                 $800.00                                
+sum                                   $2,500.00                                
+
+SQL> start part2_exercise5
+
+                                 Expense Report                                
+Date        Groceries Entertainment        Rent                                
+========= =========== ============= ===========                                
+12-MAR-15      $15.25        $10.50     $500.00                                
+15-JUL-14      $25.75         $5.00     $700.00                                
+27-JAN-14      $10.00        $12.00     $400.00                                
+20-FEB-15      $12.00        $15.00     $800.00                                
+30-OCT-14       $5.00         $2.00     $100.00                                
+                                    -----------                                
+avg                                     $500.00                                
+maximum                                 $800.00                                
+sum                                   $2,500.00                                
+
+SQL> start part2_exercise5
+
+                                 Expense Report                                
+Date        Groceries Entertainment        Rent                                
+========= =========== ============= ===========                                
+12-MAR-15      $15.25        $10.50     $500.00                                
+15-JUL-14      $25.75         $5.00     $700.00                                
+27-JAN-14      $10.00        $12.00     $400.00                                
+20-FEB-15      $12.00        $15.00     $800.00                                
+30-OCT-14       $5.00         $2.00     $100.00                                
+                                    -----------                                
+avg                                     $500.00                                
+maximum                                 $800.00                                
+sum                                   $2,500.00                                
+
+SQL> start part2_exercise5
+
+                                 Expense Report                                
+Date        Groceries Entertainment        Rent                                
++++++++++ +++++++++++ +++++++++++++ +++++++++++                                
+12-MAR-15      $15.25        $10.50     $500.00                                
+15-JUL-14      $25.75         $5.00     $700.00                                
+27-JAN-14      $10.00        $12.00     $400.00                                
+20-FEB-15      $12.00        $15.00     $800.00                                
+30-OCT-14       $5.00         $2.00     $100.00                                
+                                    -----------                                
+avg                                     $500.00                                
+maximum                                 $800.00                                
+sum                                   $2,500.00                                
+
+SQL> start part2_exercise5
+
+                                 Expense Report                                
+Date        Groceries Entertainment        Rent                                
+========= =========== ============= ===========                                
+12-MAR-15      $15.25        $10.50     $500.00                                
+15-JUL-14      $25.75         $5.00     $700.00                                
+27-JAN-14      $10.00        $12.00     $400.00                                
+20-FEB-15      $12.00        $15.00     $800.00                                
+30-OCT-14       $5.00         $2.00     $100.00                                
+                                    -----------                                
+avg                                     $500.00                                
+maximum                                 $800.00                                
+sum                                   $2,500.00                                
+
+SQL> start part2_exercise5
+
+                                 Expense Report                                
+Date        Groceries Entertainment        Rent                                
+========= =========== ============= ===========                                
+12-MAR-15      $15.25        $10.50     $500.00                                
+                                                                               
+                                                                               
+15-JUL-14      $25.75         $5.00     $700.00                                
+                                                                               
+                                                                               
+27-JAN-14      $10.00        $12.00     $400.00                                
+                                                                               
+                                                                               
+20-FEB-15      $12.00        $15.00     $800.00                                
+                                                                               
+                                                                               
+30-OCT-14       $5.00         $2.00     $100.00                                
+                                                                               
+                                                                               
+
+SQL> start part2_exercise5
+
+                                 Expense Report                                
+Date        Groceries Entertainment        Rent                                
+========= =========== ============= ===========                                
+12-MAR-15      $15.25        $10.50     $500.00                                
+15-JUL-14      $25.75         $5.00     $700.00                                
+27-JAN-14      $10.00        $12.00     $400.00                                
+20-FEB-15      $12.00        $15.00     $800.00                                
+30-OCT-14       $5.00         $2.00     $100.00                                
+
+SQL> start part2_exercise5
+
+                                 Expense Report                                
+Date        Groceries Entertainment        Rent                                
+========= =========== ============= ===========                                
+12-MAR-15      $15.25        $10.50     $500.00                                
+                                                                               
+                                                                               
+15-JUL-14      $25.75         $5.00     $700.00                                
+                                                                               
+                                                                               
+27-JAN-14      $10.00        $12.00     $400.00                                
+                                                                               
+                                                                               
+20-FEB-15      $12.00        $15.00     $800.00                                
+                                                                               
+                                                                               
+30-OCT-14       $5.00         $2.00     $100.00                                
+                                                                               
+                                                                               
+
+SQL> start part2_exercise5
+
+                  Expense Report                  
+Date        Groceries Entertainment        Rent   
+========= =========== ============= ===========   
+12-MAR-15      $15.25        $10.50     $500.00   
+                                                  
+                                                  
+15-JUL-14      $25.75         $5.00     $700.00   
+                                                  
+                                                  
+27-JAN-14      $10.00        $12.00     $400.00   
+                                                  
+                                                  
+20-FEB-15      $12.00        $15.00     $800.00   
+                                                  
+                                                  
+30-OCT-14       $5.00         $2.00     $100.00   
+                                                  
+                                                  
+
+SQL> start part2_exercise5
+
+                  Expense Report                  
+Date        Groceries Entertainment        Rent   
+========= =========== ============= ===========   
+12-MAR-15      $15.25        $10.50     $500.00   
+                                                  
+                                                  
+15-JUL-14      $25.75         $5.00     $700.00   
+                                                  
+                                                  
+27-JAN-14      $10.00        $12.00     $400.00   
+                                                  
+                                                  
+20-FEB-15      $12.00        $15.00     $800.00   
+                                                  
+                                                  
+30-OCT-14       $5.00         $2.00     $100.00   
+                                                  
+                                                  
+
+SQL> start part2_exercise5
+
+                  Expense Report                  
+Date        Groceries Entertainment        Rent   
+========= =========== ============= ===========   
+12-MAR-15      $15.25        $10.50     $500.00   
+15-JUL-14      $25.75         $5.00     $700.00   
+27-JAN-14      $10.00        $12.00     $400.00   
+20-FEB-15      $12.00        $15.00     $800.00   
+30-OCT-14       $5.00         $2.00     $100.00   
+          ----------- ------------- -----------   
+avg            $13.60         $8.90     $500.00   
+maximum        $25.75        $15.00     $800.00   
+sum            $68.00        $44.50   $2,500.00   
+
+SQL> start part2_exercise5
+
+                  Expense Report                  
+Date        Groceries Entertainment        Rent   
+========= =========== ============= ===========   
+12-MAR-15      $15.25        $10.50     $500.00   
+15-JUL-14      $25.75         $5.00     $700.00   
+27-JAN-14      $10.00        $12.00     $400.00   
+20-FEB-15      $12.00        $15.00     $800.00   
+30-OCT-14       $5.00         $2.00     $100.00   
+          ----------- ------------- -----------   
+avg            $13.60         $8.90     $500.00   
+maximum        $25.75        $15.00     $800.00   
+sum            $68.00        $44.50   $2,500.00   
+                                                  
+                                                  
+
+SQL> avg            $13.60         $8.90     $500.00
+SP2-0734: unknown command beginning "avg       ..." - rest of line ignored.
+SQL> start part2_exercise5
+
+                 Expense Report                
+Date        Groceries Entertainment        Rent
+========= =========== ============= ===========
+12-MAR-15      $15.25        $10.50     $500.00
+15-JUL-14      $25.75         $5.00     $700.00
+27-JAN-14      $10.00        $12.00     $400.00
+20-FEB-15      $12.00        $15.00     $800.00
+30-OCT-14       $5.00         $2.00     $100.00
+          ----------- ------------- -----------
+avg            $13.60         $8.90     $500.00
+maximum        $25.75        $15.00     $800.00
+sum            $68.00        $44.50   $2,500.00
+
+SQL> start part2_exercise5
+
+                 Expense Report                
+Date        Groceries Entertainment        Rent
+========= =========== ============= ===========
+12-MAR-15      $15.25        $10.50     $500.00
+                                               
+15-JUL-14      $25.75         $5.00     $700.00
+                                               
+27-JAN-14      $10.00        $12.00     $400.00
+                                               
+20-FEB-15      $12.00        $15.00     $800.00
+                                               
+30-OCT-14       $5.00         $2.00     $100.00
+                                               
+          ----------- ------------- -----------
+avg            $13.60         $8.90     $500.00
+maximum        $25.75        $15.00     $800.00
+sum            $68.00        $44.50   $2,500.00
+
+SQL> start part2_exercise5
+
+                 Expense Report                
+Date        Groceries Entertainment        Rent
+========= =========== ============= ===========
+12-MAR-15      $15.25        $10.50     $500.00
+                                               
+15-JUL-14      $25.75         $5.00     $700.00
+                                               
+27-JAN-14      $10.00        $12.00     $400.00
+                                               
+20-FEB-15      $12.00        $15.00     $800.00
+                                               
+30-OCT-14       $5.00         $2.00     $100.00
+                                               
+          ----------- ------------- -----------
+avg            $13.60         $8.90     $500.00
+maximum        $25.75        $15.00     $800.00
+sum            $68.00        $44.50   $2,500.00
+
+SQL> spool off

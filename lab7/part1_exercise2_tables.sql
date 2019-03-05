@@ -8,4 +8,5 @@ CREATE TABLE Course_Prereq (
     prereqNo INTEGER,
     FOREIGN KEY (prereqNo)
      REFERENCES Course (courseNo)
-)
+);
+

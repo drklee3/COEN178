@@ -11,6 +11,8 @@ SELECT *
 SELECT COUNT(*)
   FROM Course_Prereq;
 
+INSERT INTO Course_Prereq VALUES (133,12);
+
 UPDATE COURSE_PREREQ
    SET courseno = 121
  WHERE courseno = 133;
