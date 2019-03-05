@@ -1,6 +1,3 @@
-expenseDate, groceries, entertainment, and rent 
- “Date”, “Groceries”,“Entertainment”, and “Rent” respectively.
-
 COLUMN expenseDate   HEADING 'Date'
 COLUMN groceries     HEADING 'Groceries'
 COLUMN entertainment HEADING 'Entertainment'
@@ -12,4 +9,15 @@ SET UNDERLINE '='
 
 BREAK ON expenseDate SKIP 1
 
-COLUMN rent FORMAT $99,990
+COLUMN groceries     FORMAT $99,999.99
+COLUMN entertainment FORMAT $99,999.99
+COLUMN rent          FORMAT $99,999.99
+
+BREAK ON REPORT
+COMPUTE AVG SUM MAX LABEL TOTAL OF SALARY ON REPORT
+
+  SELECT expenseDate
+         , groceries
+         , entertainment
+         , rent
+    FROM Expenses;
